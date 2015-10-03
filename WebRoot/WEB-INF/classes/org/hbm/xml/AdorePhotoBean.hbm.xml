@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.keekan.bean">
+	<class name="AdorePhotoBean" table="adore_photo">
+		<id	name="adorePhotoId" column="adore_photo_id">
+			<generator class="identity"/>
+		</id>
+		<property name="ownAdoreId" column="own_adore_id" type="integer" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="keeno" column="keeno" type="integer" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="rawPhotoName" column="raw_photo_name" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="photoName" column="photo_name" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="createDate" column="create_date" type="string" length="50" not-null="false" unique="false" update="true" insert="true"/>
+	</class>	
+</hibernate-mapping>

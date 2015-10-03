@@ -1,0 +1,22 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, div{font-family: "Microsoft Yahei",Tahoma; font-size: 12px; border:0; margin:0; padding:0}
+
+/* insert photo tab head*/
+.insertTabHead{width:600px; height:25px; border:0; background:#EFEFEF; position:absolute; top: 0px; left:0; line-height:28px}
+.insertTabHead .tabMenu{width:600px; height:25px; position: absolute; top:0; left:0; list-style:none}
+.insertTabHead .tabMenu li{height:25px; line-height:25px; background-color:#F0F0F0; padding:0 10px 0 10px; list-style:none; font-size:12px; text-align:center; float:left; cursor:pointer; color: #666;}
+.insertTabHead .tabMenu li:HOVER{background-color: #DDD;}
+.insertTabHead .tabMenu li.current{background-color:#FFF;}
+
+/* insert photo tab body*/
+.insertTabBody{width: 600px; height: 375px; position:absolute; top: 25px; left:0; overflow:hidden}
+.insertTabBody .uploadPhotoBox{width: 600px; height: 375px; position:absolute; top: 0px; left:0;}
+.insertTabBody .uploadPhotoBox .flash-container{width: 602px; height: 350px; position:absolute; top: -30px; left: -1px;}
+.insertTabBody .uploadPhotoBox .photoUploadTool{width: 602px; height: 35px; position:absolute; top: 320px; left: 0px; }
+.insertTabBody .uploadPhotoBox .photoUploadTool p{text-align: left; color: #666; line-height: 30px; text-indent: 10px;}
+.insertTabBody .uploadPhotoBox .photoUploadTool #upload{width: 80px; height: 25px; position: relative; top: -25px; left: 515px;}
+
+.insertTabBody .selectAlbumBox{width: 600px; height: 375px; position:absolute; top: 0px; left:0; display: none;}
+
+input[type=button]{background-color:#39F; color:#FFF}
+input[type=button]:HOVER{background-color:#06C; color:#FFF}
+input[type=button]:ACTIVE{background-color:#039; color:#FFF}

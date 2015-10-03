@@ -1,0 +1,72 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, img, div{margin:0; padding:0; border:0; font-family:"Microsoft Yahei",Tahoma; -webkit-text-size-adjust:none;}
+body{background-color:#FFF;}
+
+.avatarCard{width:1000px; height:600px; position:absolute; top:0; left:0; overflow:hidden}
+.avatarMainBar{width: 1000px; height: 104px; background-color: #E0E0E0; position:absolute; top:0; left:0;}
+.nowAvatarBox{width: 100px; height: 100px; border: 4px solid #FFF; position: absolute; top: 0; left: 0;}
+
+.avatarInteract{width:1000px; height:596px; position:absolute; top:104px; left:0; }
+
+.avatarInfoBox{width: 992px; height: 20px; position: absolute; top: 20px; left: 4px;}
+.avatarInfoBox .avatarInfoTitle{width: 100px; height: 20px; background: #77b0d8 url("../../img/avatar.png")  no-repeat 2px center;}
+.avatarInfoBox .avatarInfoTitle p{font-size: 12px; color: #FFF; text-indent: 20px; line-height: 21px;}
+.avatarInfoBox .avatarInfo{height: 20px; background-color: #DDD; position: absolute; top: 0; left: 108px; font-size: 12px; color: #FF6600}
+
+
+.labelBox{width: 992px; height: 20px; position: absolute; top: 60px; left: 4px;}
+.labelBox .labelTitle{width: 100px; height: 20px; background: #77b0d8 url("../../img/label.png")  no-repeat 2px center;}
+.labelBox .labelTitle p{font-size: 12px; color: #FFF; text-indent: 15px; line-height: 21px;}
+.labelBox .label{height: 20px; background-color: #DDD; position: absolute; top: 0; left: 108px; font-size: 12px; color: #FF6600;}
+.labelBox .label #label{width: 70px; height: 20px; border: 1px solid #DDD; background-color: #F0F0F0; font-size: 12px; color: #666;}
+.labelBox .label #label:HOVER{border: 1px solid #06C; background-color: #06C; color: #FFF;}
+.labelBox .label #label:ACTIVE{border: 1px solid #039; background-color: #039; color: #FFF;}
+
+.reviewBox{width: 992px; height: 20px; position: absolute; top: 100px; left: 4px;}
+.reviewBox .reviewTitle{width: 100px; height: 20px; background: #77b0d8 url("../../img/review.png")  no-repeat 2px center;}
+.reviewBox .reviewTitle p{font-size: 12px; color: #FFF; text-indent: 15px; line-height: 21px;}
+
+.heartBox{width: 992px; height: 20px; position: absolute; top: 140px; left: 4px;}
+.heartBox .heartTitle{width: 100px; height: 20px; background: #77b0d8 url("../../img/heart.png")  no-repeat 2px center;}
+.heartBox .heartTitle p{font-size: 12px; color: #FFF; text-indent: 15px; line-height: 21px;}
+
+.visitorBox{width: 992px; height: 20px; position: absolute; top: 180px; left: 4px;}
+.visitorBox .visitorTitle{width: 100px; height: 20px; background: #77b0d8 url("../../img/visitor.png")  no-repeat 0px center;}
+.visitorBox .visitorTitle p{font-size: 12px; color: #FFF; text-indent: 19px; line-height: 21px;}
+
+
+
+
+.tagSelectBox{width: 300px; height: 235px;  position: absolute; top: 22px; left: 108px; background-color: #fff; border: 1px solid; border-color: #CCC #CCC #a8a8a8; -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,.2); -moz-box-shadow: 0px 2px 2px rgba(0,0,0,.2); box-shadow: 0px 2px 2px rgba(0,0,0,.2); z-index: 1201 !important;display: none;}
+
+.tagSelectBox .tagCustom{width: 300px; height: 50px; background-color: #E5E5E5; position: absolute; top: 0; left: 0;}
+.tagSelectBox .tagCustom input[type=text]{width: 240px; height: 25x; margin: 10px 0 0 5px;}
+.tagSelectBox .tagCustom input[type=button]{width: 40px; height: 25x; font-size: 12px; margin: 0 0 0 5px;}
+
+.tagSelectBox .tagSelect{width: 300px; height: 160px; background-color: #FAFAFA; position: absolute; top: 50px; left: 0; overflow: hidden;  font-size: 12px; color: #333;}
+.tagSelectBox .tagSelect .tag{width: 300px; height: 160px; position: absolute; top: 0px; left: 0;}
+.tagSelectBox .tagSelect .tag .tagName{text-indent: 1em; padding: 5px 0 5px 0; font-size: 12px;}
+.tagSelectBox .tagSelect .tag .tags{width: 55px; height: 20px; border: 1px solid #C6DAB5; padding: 0 0 0 5px; background-color: #DFF3CD; float: left; margin: 5px 0 5px 10px; text-align: left; color: #5D893E;}
+.tagSelectBox .tagSelect .tag .tags:HOVER{background-color: #ceefb0; }
+
+.tagSelectBox .tagPage{width: 300px; height: 25px; background-color: #FAFAFA; position: absolute; top: 210px; left: 0; text-align: center;}
+.tagSelectBox .tagPage .page{width: 10px; height: 10px; background-color: #AAA; float: left; margin: 0px 0 0px 10px;}
+.tagSelectBox .tagPage .page:HOVER{background-color: #06C;}
+.tagSelectBox .tagPage .pageCurrent{background-color: #06C;}
+
+
+input[type=text]{padding:0 4px; background:#fff; border:1px solid #d9d9d9; border-top:1px solid #c0c0c0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+input[type=text]:hover{border:1px solid #b9b9b9; -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1); -moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1); box-shadow:inset 0 1px 2px rgba(0,0,0,0.1)}
+input[type=text]:focus{outline:none; border:1px solid #b9b9b9; -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1); -moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1); box-shadow:inset 0 1px 2px rgba(0,0,0,0.1)}
+
+input[type=button]{border:0; background-color:#39F; color:#FFF}
+input[type=button]:HOVER{border:0; background-color:#06C; color:#FFF}
+input[type=button]:ACTIVE{border:0; background-color:#039; color:#FFF}
+
+
+
+
+
+
+
+
+

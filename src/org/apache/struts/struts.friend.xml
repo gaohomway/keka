@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="friend" extends="keekan">
+	
+		<!-- 好友Action -->
+		<action name="friend" class="com.keekan.action.FriendAction" method="friend">
+			<result name="friendSuccess">/jsp/friend/friend.jsp</result>    
+			<result name="friendFails">/jsp/friend/friend.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+        </action>
+        
+        <!-- 查找好友初始化[精准查找] -->
+		<action name="friendFindInit" class="com.keekan.action.FriendAction" method="friendFindInit">
+             <result name="success">/jsp/friend/friendFind.jsp</result>
+             <interceptor-ref name="defaultStack"/>
+        </action>
+        
+	</package>
+	
+	<package name="friend-json" extends="json-default">
+	
+		<!-- 发送聊天信息 -->
+		<action name="sendChat" class="com.keekan.action.ChatAction" method="sendChat">
+             <result type="json"></result>                   
+        </action>
+        
+        <!-- 查找好友[精准查找] -->
+		<action name="friendFind" class="com.keekan.action.FriendAction" method="friendFind">
+             <result type="json"></result>                   
+        </action>
+        
+        <!-- 查看用户资料卡 -->
+		<action name="friendInfoCard" class="com.keekan.action.FriendAction" method="friendInfoCard">
+             <result type="json"></result>                   
+        </action>
+        
+        <!-- 添加好友 -->
+		<action name="addFriend" class="com.keekan.action.FriendAction" method="addFriend">
+             <result type="json"></result>                   
+        </action>
+        
+        <!-- 添加验证信息初始化 -->
+		<action name="addAttestInfoInit" class="com.keekan.action.FriendAction" method="addAttestInfoInit">
+             <result type="json"></result>                   
+        </action>
+	</package>
+</struts>

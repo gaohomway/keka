@@ -1,0 +1,15 @@
+
+.photoPageBox a{width: 30px; text-align:center; cursor:pointer; font-size: 12px; color:#666; display: inline-block;}
+.photoPageBox a:hover{background-color:#333; color:#FFF}
+
+.photoPageBox a.jp-previous{width: 40px;}
+.photoPageBox a.jp-next{width: 40px;}
+
+.photoPageBox a.jp-current, a.jp-current:hover{ color:#FF4242; font-weight:bold}
+
+.photoPageBox a.jp-disabled, a.jp-disabled:hover{color:#bbb}
+
+.photoPageBox a.jp-current, a.jp-current:hover, 
+.photoPageBox a.jp-disabled, a.jp-disabled:hover{cursor:default; background:none}
+
+.photoPageBox span{}

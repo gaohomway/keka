@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="adorePhoto" extends="keekan">
+        
+        <!-- 倾心添加照片初始化 -->
+        <action name="insertPhoto" class="com.keekan.action.AdorePhotoAction" method="insertPhoto">
+			<result name="success">/jsp/insertPhoto.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action> 
+        
+        <!-- 倾心添加照片完成 -->
+        <action name="addAdorePhotoFinish" class="com.keekan.action.AdoreAction" method="addAdorePhotoFinish">
+			<result name="success">/jsp/insertPhoto.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+		
+	</package>
+	
+	<package name="adorePhoto-json" extends="json-default">
+	
+	 	<!-- 插入照片缩略图 -->
+		<action name="insertPhotoThum" class="com.keekan.action.AdorePhotoAction" method="insertPhotoThum">
+             <result type="json"></result>                   
+        </action>
+	</package>
+
+</struts>

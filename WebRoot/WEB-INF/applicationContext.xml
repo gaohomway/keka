@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<!-- 定义数据源Bean，使用C3P0数据源实现 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<!-- 指定连接数据库的驱动 -->
+		<property name="driverClass" value="com.mysql.jdbc.Driver"/>
+		<!-- 指定连接数据库的URL -->
+		<property name="jdbcUrl" value="jdbc:mysql://localhost/keekan"/>
+		<!-- 指定连接数据库的用户名 -->
+		<property name="user" value="root"/>
+		<!-- 指定连接数据库的密码 -->
+		<property name="password" value="979899"/>
+		<!-- 指定连接数据库连接池的最大连接数 -->
+		<property name="maxPoolSize" value="20"/>
+		<!-- 指定连接数据库连接池的最小连接数 -->
+		<property name="minPoolSize" value="2"/>
+		<!-- 指定连接数据库连接池的初始化连接数 -->
+		<property name="initialPoolSize" value="1"/>
+		<!-- 指定连接数据库连接池的连接的最大空闲时间(S) -->
+		<property name="maxIdleTime" value="20"/>
+	</bean>
+	
+	<!--定义了Hibernate的SessionFactory -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+    
+    	<!-- 依赖注入上面定义的数据源dataSource -->
+        <property name="dataSource" ref="dataSource"/>
+        
+         <!-- 注册Hibernate的ORM映射文件 -->
+        <property name="mappingResources">
+            <list>
+            	<value>org/hbm/xml/UserBean.hbm.xml</value>
+            	<value>org/hbm/xml/LoginLogBean.hbm.xml</value>
+            	<value>org/hbm/xml/LoginBean.hbm.xml</value>
+            	<value>org/hbm/xml/KeenoPoolBean.hbm.xml</value>
+            	<value>org/hbm/xml/AlbumBean.hbm.xml</value>
+            	<value>org/hbm/xml/AlbumGroupBean.hbm.xml</value>
+            	<value>org/hbm/xml/PhotoBean.hbm.xml</value>
+            	<value>org/hbm/xml/PhotoReviewBean.hbm.xml</value>
+            	<value>org/hbm/xml/MessageBoardBean.hbm.xml</value>
+            	<value>org/hbm/xml/AvatarBean.hbm.xml</value>
+            	<value>org/hbm/xml/FriendGroupBean.hbm.xml</value>
+            	<value>org/hbm/xml/FriendBean.hbm.xml</value>
+            	<value>org/hbm/xml/NavigateBean.hbm.xml</value>
+            	<value>org/hbm/xml/PhotoCommentReplyBean.hbm.xml</value>
+            	<value>org/hbm/xml/StatusBean.hbm.xml</value>
+            	<value>org/hbm/xml/AttestInfoBean.hbm.xml</value>
+            	<value>org/hbm/xml/AlbumCoverBase.hbm.xml</value>
+            	<value>org/hbm/xml/TagBean.hbm.xml</value>
+            	<value>org/hbm/xml/TagsBean.hbm.xml</value>
+            	<value>org/hbm/xml/AdoreBean.hbm.xml</value>
+            	<value>org/hbm/xml/AdorePhotoBean.hbm.xml</value>
+            </list>
+        </property>	
+         
+        <!-- 设置Hibernate的相关属性 -->
+        <property name="hibernateProperties">
+            <props>
+            	<!-- 设置Hibernate的数据库方言 -->
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <!-- 设置Hibernate是否在控制台输出SQL，开发为：true，上线为：false -->
+                <prop key="show_sql">true</prop>
+                <!-- 设置Hibernate的自动更新策略 -->
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <!-- 设置Hibernate一个提交批次中的最大SQL语句数 -->
+                <prop key="hibernate.jdbc.batch_size">50</prop>
+                <!-- 显示SQL -->
+                <prop key="show_sql">true</prop>
+            </props>
+        </property>
+    </bean>
+    
+	<!-- 定义Hibernate的事务管理器HibernateTransactionManager -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+    	<!-- 依赖注入上面的数据源dataSource -->
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+	<!-- 定义Spring的事务拦截器TransactionInterceptor -->
+    <bean id="transactionInterceptor" class="org.springframework.transaction.interceptor.TransactionInterceptor">
+	    <!--  事务拦截器bean需要依赖注入一个事务管理器 -->
+        <property name="transactionManager" ref="transactionManager"/>
+         <!-- 下面定义要进行事务拦截的方法及所采用的事物控制类型 -->
+    	<property name="transactionAttributes">
+		    <props>
+		    	<!-- 以browse, list, load, get及is开头的所有方法采用只读型事务控制类型  -->
+		    	<prop key="browse*">PROPAGATION_REQUIRED,readOnly</prop>
+			    <prop key="list*">PROPAGATION_REQUIRED,readOnly</prop>
+			    <prop key="load*">PROPAGATION_REQUIRED,readOnly</prop>
+			    <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+			    <prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+			    <!-- 所有方法均进行事务控制，如果当前没有事务，则新建一个事务 -->
+		    	<prop key="*">PROPAGATION_REQUIRED</prop>
+		    </props>
+	    </property>
+	</bean>
+
+    <!-- 定义BeanNameAutoProxyCreator进行Spring的事务处理 -->
+    <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+	    <!-- 指定对满足哪些bean name的bean自动生成业务代理 -->
+	    <property name="beanNames">
+            <!-- 下面是所有需要自动创建事务代理的bean-->
+            <list>
+            	<value>userServe</value>
+            	<value>signupServe</value>
+            	<value>keeNumberPoolServe</value>
+            	<value>loginServe</value>
+            	<value>albumServe</value>
+            	<value>albumGroupServe</value>
+            	<value>messageBoardServe</value>
+            	<value>friendGroupServe</value>
+            	<value>friendServe</value>
+            	<value>avatarServe</value>
+            	<value>photoServe</value>
+            	<value>navigateServe</value>
+            	<value>photoReviewServe</value>
+            	<value>photoCommentReplyServe</value>
+            	<value>statusServe</value>
+            	<value>attestInfoServe</value>
+            	<value>tagServe</value>
+            	<value>adoreServe</value>
+            	<value>adorePhotoServe</value>
+            </list>
+            <!--  此处可增加其他需要自动创建事务代理的bean-->
+	    </property>
+	    
+	    <!-- 这个属性为：true，表示被代理的是目标类本身不是目标类的接口 -->
+	    <property name="proxyTargetClass">
+	    	<value>true</value>
+	    </property>
+        <!--  下面定义BeanNameAutoProxyCreator所需的事务拦截器-->
+        <property name="interceptorNames">
+            <list>
+                <!-- 此处可增加其他新的Interceptor -->
+                <value>transactionInterceptor</value> 
+            </list>
+        </property>
+    </bean>
+    
+	<import resource="application-dao.xml"></import>
+	
+	<import resource="application-serve.xml"></import>
+	
+</beans>

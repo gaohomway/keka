@@ -1,0 +1,16 @@
+html,body,* {
+	margin: 0;
+	padding: 0;
+}
+ 
+.logs-title-box {
+	width: 890px;
+	height: 15px;
+	border: 1px solid #ddd;
+	border-bottom: 0;
+	background-color: #f0f0f0;
+	padding: 5px;
+}
+.leave-message-title-box h6{
+	color: #545454;
+}

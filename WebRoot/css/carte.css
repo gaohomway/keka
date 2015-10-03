@@ -1,0 +1,38 @@
+html, body, div, h1, h2, h3, h4, h5, h6, hr, p, img, dl, dt, dd, ol, ul, li, table, tr, td, form, object, embed, article, aside, canvas, command, details, fieldset, figcaption, figure, footer, group, header, hgroup, input, legend, mark, menu, meter, nav, output, progress, section, summary, time, audio, video{margin:0; padding:0; border:0; font-family:"Microsoft Yahei",Tahoma;}
+
+.carteCard{width:1000px; height:600px; border:0; position: absolute; top:0; left:0; overflow:hidden}
+
+.carteMenu{width: 1000px; height: 20px; background-color: #F0F0F0; position: absolute; top: 0; left: 0; }
+.carteMenu .button{width: 100px; height: 20px; font-size: 12px; float: left; text-align: center; line-height: 20px; cursor: default;}
+.carteMenu #baseInfo{margin-left: 0px;}
+.carteMenu #profile{margin-left: 0px;}
+.carteMenu #moreInfo{margin-left: 301px;}
+.carteMenu #hobby{margin-left: 0px;}
+
+
+.carteBox{width: 1000px; height: 460px; background-color: #FFF; position: absolute; top: 20px; left: 0; }
+
+.baseInfoBox{width: 500px; height: 460px; border-right: 1px solid #F0F0F0; position: absolute; top: 0; left: 0;}
+.profileBox{width: 500px; height: 460px; border-right: 1px solid #F0F0F0; position: absolute; top: 0; left: 0;}
+.moreInfoBox{width: 500px; height: 460px; border: 0; position: absolute; top: 0; left: 500px;}
+.hobbyBox{width: 500px; height: 460px; border: 0; position: absolute; top: 0; left: 500px;}
+
+
+.nameBox, .sexBox, .birthdayBox, .zodiacConstellationBox, .bloodTypeBox, .feelingBox, .habitBox, .addressBox, .homelandBox, .explainBox{width: 470px; height: 20px; margin: 15px 0 0 10px; border: 0px solid #000; }
+.nameTitle, .sexTitle, .birthdayTitle, .zodiacConstellationTitle, .bloodTypeTitle, .feelingTitle, .habitTitle, .addressTitle, .homelandTitle, .explainTitle{width: 100px; height: 20px; background: #77b0d8 url("../img/avatar.png")  no-repeat 2px center;}
+.nameTitle p, .sexTitle p, .birthdayTitle p, .zodiacConstellationTitle p, .bloodTypeTitle p, .feelingTitle p, .habitTitle p, .addressTitle p, .homelandTitle p, .explainTitle p{font-size: 12px; color: #FFF; text-indent: 20px; line-height: 21px;}
+.name, .sex, .birthday, .zodiacConstellation, .bloodType, .feeling, .habit, .address, .homeland, .explain{height: 20px; font-size: 12px; color: #666; margin: -20px 0 0 110px;}
+
+.telephoneBox, .mobileNumberBox, .emailBox, .jobBox, .educationBox, .schoolBox, .homepageBox, .languageBox{width: 470px; height: 20px; margin: 15px 0 0 10px; border: 0px solid #000; }
+.telephoneTitle, .mobileNumberTitle, .emailTitle, .jobTitle, .educationTitle, .schoolTitle, .homepageTitle, .languageTitle{width: 100px; height: 20px; background: #77b0d8 url("../img/avatar.png")  no-repeat 2px center;}
+.telephoneTitle p, .mobileNumberTitle p, .emailTitle p, .jobTitle p, .educationTitle p, .schoolTitle p, .homepageTitle p, .languageTitle p{font-size: 12px; color: #FFF; text-indent: 20px; line-height: 21px;}
+.telephone, .mobileNumber, .email, .job, .education, .school, .homepage, .language{height: 20px; font-size: 12px; color: #666; margin: -20px 0 0 110px;}
+
+.button{border:0; color:#666}
+.button:HOVER{background-color:#DDD; color:#666}
+.button:ACTIVE{background-color:#FFF; color:#666}
+.buttonFocus{background-color:#FFF; color:#111}
+
+input[type=button]{border:0; background-color:#39F; color:#FFF}
+input[type=button]:HOVER{border:0; background-color:#06C; color:#FFF}
+input[type=button]:ACTIVE{border:0; background-color:#039; color:#FFF}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="album" extends="keekan">
+		
+		<action name="AlbumGroup" class="com.keekan.action.AlbumGroupAction">
+			<result name="addAlbum">/jsp/album/album.jsp</result>
+			<result name="viewAllAlbumSuccess">/jsp/album/album.jsp</result>
+			<result name="viewAllAlbumSuccessFails">/jsp/album/album.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+        
+        <!-- 相册 -->
+        <action name="album" class="com.keekan.action.AlbumAction" method="album">
+			<result name="albumSuccess">/jsp/album/album.jsp</result>
+			<result name="albumFails">/jsp/album/album.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+
+	</package>
+	
+	<package name="album-json" extends="json-default">
+	
+		<!-- 添加相册 -->
+		<action name="addAlbum" class="com.keekan.action.AlbumAction" method="addAlbum">
+             <result type="json"></result>                   
+        </action>
+		
+		<!-- 为头像查询相册 -->
+		<action name="albumOfAvatar" class="com.keekan.action.AlbumAction" method="albumOfAvatar">
+             <result type="json"></result>                   
+        </action>
+	
+	</package>
+
+</struts>

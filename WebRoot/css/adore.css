@@ -1,0 +1,51 @@
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl, dt, dd, ol, ul, li, table, tr, td, form, object, embed, article, aside, canvas, command, details, fieldset, figcaption, figure, footer, group, header, hgroup, legend, mark, menu, meter, nav, output, progress, section, summary, time, audio, video, input{margin:0; padding:0; border:0; font-family:"Microsoft Yahei",Tahoma; font-size: 12px;}
+
+body{background-color:#e8f2fe; }
+
+.adoreMainBox{width: 700px; height: 6000px; position: absolute;top: 0; left: 0; }
+
+.adorePublishBox{width: 700px; height: 150px; background-color: #F5F5F5;position: absolute;top: 0; left: 0; }
+.adorePublishBox .contentBox{width: 600px; height: 50px; position: absolute; top: 20px; left: 20px;}
+.adorePublishBox .contentBox .content{width: 600px; height: 50px; outline: none; border: 1px solid #DADADA; resize: none; padding: 7px; letter-spacing: 2px; line-height: 25px;}
+.adorePublishBox .contentBox .content:HOVER{outline: none; border: 1px solid #A0A0A0; padding: 7px;}
+.adorePublishBox .contentBox .content:FOCUS{outline: none; border: 1px solid #3399FF; padding: 7px; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3); }
+
+.adorePublishBox .joinElementBox{width: 500px; height: 30px; position: absolute; top: 90px; left: 20px;}
+.adorePublishBox .joinElementBox .insertPicture{width: 50px; height: 20px; background:  url("../img/picture.png") no-repeat 5px 3px; text-indent: 22px; line-height: 20px; color: #666;}
+.adorePublishBox .joinElementBox .insertPicture:HOVER{background: #06c url("../img/picture.png") no-repeat 5px -16px; color: #FFF; cursor: default;}
+.adorePublishBox .joinElementBox .insertPicture:ACTIVE{background: #039 url("../img/picture.png") no-repeat 5px -16px; color: #FFF; cursor: default;}
+
+.adorePublishBox .pictureDialog{width: 600px; height: 380px; background-color: #FFF; border: 1px solid; border-color: #D7D7D7; position: absolute; top: 120px; left: 20px; -webkit-box-shadow: 0px 1px 2px #DDD; -moz-box-shadow: 0px 1px 2px #DDD; box-shadow: 0px 1px 2px #DDD; overflow: hidden; display: none; z-index: 10;}
+.adorePublishBox .pictureDialog .friendIframe{width: 600px; height: 380px; border:0px solid red; overflow:hidden}
+
+.adorePublishBox .publish{width: 110px; height: 30px; position: absolute; top: 90px; left: 525px; text-align: right;}
+.adorePublishBox .publish input[type=button]{width: 50px; height: 25px;}
+
+.adorePublishBox .AlreadyJoin{width: 600px; height: 20px; position: absolute; top: 120px; left: 20px;}
+.adorePublishBox .AlreadyJoin .joinPhotoNumber{width: 120px; height: 20px; border: 1px solid #aaa; background:  url("../img/album.png") no-repeat 3px 1px; text-indent: 22px; line-height: 20px; color: #666;}
+.adorePublishBox .AlreadyJoin .joinPhotoNumber:HOVER{ border: 1px solid #06c; background: #06c url("../img/album.png") no-repeat 3px -33px; color: #FFF; cursor: default;}
+.adorePublishBox .AlreadyJoin .joinPhoto{width:170px; min-height: 50px; padding: 5px 0 0 5px;  background-color: #FFF; border: 1px solid; border-color: #D7D7D7; position: absolute; top: 25px; left: 0px; -webkit-box-shadow: 0px 1px 2px #DDD; -moz-box-shadow: 0px 1px 2px #DDD; box-shadow: 0px 1px 2px #DDD; overflow: hidden;  z-index: 10; display: none;}
+.adorePublishBox .AlreadyJoin .joinPhoto .photoThum{width: 50px; height: 50px; float: left; margin: 0 5px 5px 0; overflow: hidden;}
+.adorePublishBox .AlreadyJoin .joinPhoto .photoThum img{max-width: 100px; max-height: 100px;}
+
+
+.adoreShowBox{width: 700px; height: 4500px; position: absolute; top: 150px; left: 0; background-color: #FFF;}
+.adoreShowBox .adoreBox{width: 700px; min-height: 50px; border-bottom: 1px solid #CCC; }
+.adoreShowBox .adoreBox .avatar{width: 50px; height: 50px; margin: 20px 0 0 20px;}
+.adoreShowBox .adoreBox .avatar img{max-width: 50px; max-height: 50px;}
+
+.adoreShowBox .adoreBox .nickname{width: 500px; height: 20px;  margin: -50px 0 0 85px;}
+.adoreShowBox .adoreBox .nickname p{font-size: 13px; text-align: left; line-height: 20px; color: #946652;}
+
+.adoreShowBox .adoreBox .content{width: 500px; min-height: 20px; margin: 0 0 0 85px;}
+.adoreShowBox .adoreBox .content p{font-size: 13px; text-align: left; line-height: 25px; color: #444444;}
+
+.adoreShowBox .adoreBox .photo{width: 500px; min-height: 50px; margin: 0 0 0 85px;}
+.adoreShowBox .adoreBox .photo img{max-width: 100px;  padding: 3px; border: 1px solid #E7E7E7; background: #fff;}
+
+.adoreShowBox .adoreBox .operate{width: 500px; min-height: 10px; margin: 0 0 0 85px;}
+.adoreShowBox .adoreBox .operate p{line-height: 30px; color: #9B9B9B;}
+
+input[type=button]{background-color:#39F; color:#FFF}
+input[type=button]:HOVER{background-color:#06C; color:#FFF}
+input[type=button]:ACTIVE{background-color:#039; color:#FFF}

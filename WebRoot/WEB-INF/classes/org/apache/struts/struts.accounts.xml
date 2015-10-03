@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="accounts" extends="keekan">
+		
+		<!-- 登录初始化 -->
+		<action name="loginInit" class="com.keekan.action.LoginAction" method="loginInit">
+			<result name="login">/jsp/account/login.jsp</result>
+           <interceptor-ref name="defaultStack"/>
+        </action>
+		
+		<!-- 登录 -->
+		<action name="login" class="com.keekan.action.LoginAction" method="login">
+			<result name="success" type="redirectAction">
+				<param name="actionName">myka.html</param>
+			</result>
+			<result name="fails">/jsp/account/login.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+        </action>
+		
+		<!-- 登出 -->
+		<action name="logout" class="com.keekan.action.LoginAction" method="logout">
+			<result name="success" type="redirectAction">
+				<param name="actionName">loginInit.html</param>
+			</result>
+			<interceptor-ref name="defaultStack"/>
+        </action>
+		
+		<!-- MykaAction -->
+		<action name="myka" class="com.keekan.action.MykaAction" method="myka">
+			<result name="mykaSuccess">/jsp/myka.jsp</result>    
+			<result name="mykaFails">/jsp/account/login.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+        </action>
+        
+		<!-- 登录转注册 -->
+		<action name="signup">
+			<result name="*">/jsp/account/signup.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+		
+        <!-- 帐号初始化 -->
+        <action name="accountsInit" class="com.keekan.action.AccountsInit" method="accountsInit">
+			<result name="initSuccess">/jsp/accountsInit.jsp</result>
+			<result name="initFails">/jsp/account/login.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+        </action>
+        
+        <action name="friendKeeNumber">
+			<result name="*">/index.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+        
+	</package>
+	
+	<package name="signup-json" extends="json-default">
+		
+    	<!-- 验证码验证 -->
+		<action name="vercode" class="com.keekan.action.SignupAction" method="vercode">
+			<result type="json"></result>
+       	</action>
+       	
+    	<!-- 注册处理 -->
+		<action name="signups" class="com.keekan.action.SignupAction" method="signup">
+			<result type="json"></result>
+       	</action>
+       	
+    </package>
+</struts>

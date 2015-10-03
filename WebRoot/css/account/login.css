@@ -1,0 +1,52 @@
+html, body, div, h1, h2, h3, h4, h5, h6, hr, p, img, dl, dt, dd, ol, ul, li, table, tr, td, form, object, embed, article, aside, canvas, command, details, fieldset, figcaption, figure, footer, group, header, hgroup, input, legend, mark, menu, meter, nav, output, progress, section, summary, time, audio, video{margin:0; padding:0; border:0; font-family:"Microsoft Yahei",Tahoma;}
+
+body{background-color:#FFF;  }
+
+.kanLogo{width:1000px; height:50px; margin:20px auto 0 auto}
+
+.loginBox{width:1000px; height: 350px; border: 0; background-color: #FFF; margin-top:100px; margin-right:auto; margin-left:auto; font-size:13px; color:#000}
+.loginBox .login{width: 342px; height: 348px; border:1px solid #F7F7F7; background-color: #F7F7F7; }
+
+.loginBox .login .keenoPasswordBox{width:300px; height: 71px;  border:1px solid #D9D9D9; border-bottom-color: #D1D1D1; background-color: #FFF; margin: 30px 0 0 20px;}
+.loginBox .login .keenoPasswordBox div{width: 280px; height: 0px; border: 0; border-top:1px solid #D9D9D9; margin-left: 10px;}
+.loginBox .login .operateK{width: 320px; height: 50px; border: 0px solid #000; margin: 10px 0 0 20px;}
+
+.loginBox .login .avatarBox{width:300px; height: 71px;  border:1px solid #D9D9D9; border-bottom-color: #D1D1D1; background-color: #FFF; margin: 30px 0 0 20px;}
+.loginBox .login .avatarBox .avatar{width: 50px; height: 50px; margin: 10px 0 0 10px;}
+.loginBox .login .avatarBox .nickname {width: 220px; height: 50px; margin: -50px 0 0 70px;}
+.loginBox .login .avatarBox .nickname p{padding: 3px 0 3px 0; font-weight: bold; color: #666;}
+
+.loginBox .login .avatarBox .nickname .keeno{border-top: 1px solid #D9D9D9;}
+
+.loginBox .login .operateA{width: 320px; height: 50px; border: 0; margin: 10px 0 0 20px;}
+
+.loginBox .login .operateK .ask{width: 19px; height: 19px; border: 0; background: url("../../img/ask.png") no-repeat 0px center; margin: 0 0 0 124px;}
+.loginBox .login .operateK .ask:HOVER{width: 19px; height: 19px; border: 0; background: url("../../img/ask.png") no-repeat -30px center;}
+.loginBox .login .operateK .ask:ACTIVE{width: 19px; height: 19px; border: 0; background: url("../../img/ask.png") no-repeat -59px center;}
+
+.loginBox .login .error{width: 300px; color: #cc0000; margin: 0 0 0 20px;}
+
+
+.loginBox input[type=text], .loginBox input[type=password]{width: 300px; height: 35px; padding-left: 30px; font-weight: bold; color: #666;}
+.loginBox input[type=text]{background: url(../../img/account/person.png) no-repeat 8px center;}
+.loginBox input[type=password]{background: url(../../img/account/lock.png) no-repeat 8px center;}
+
+input[type=text], input[type=password]{padding:0 4px; background:#fff; border: 0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+input[type=text]:hover{border:0; -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1); -moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1); box-shadow:inset 0 1px 2px rgba(0,0,0,0.1)}
+input[type=text]:focus{outline:none; border:0; -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.2); -moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.2); box-shadow:inset 0 1px 2px rgba(0,0,0,0.2)}
+input[type=password]:hover{border:0; -webkit-box-shadow:inset 0 -1px 2px rgba(0,0,0,0.1); -moz-box-shadow:inset 0 -1px 2px rgba(0,0,0,0.1); box-shadow:inset 0 -1px 2px rgba(0,0,0,0.1)}
+input[type=password]:focus{outline:none; border:0; -webkit-box-shadow:inset 0 -1px 2px rgba(0,0,0,0.1); -moz-box-shadow:inset 0 -1px 2px rgba(0,0,0,0.1); box-shadow:inset 0 -1px 2px rgba(0,0,0,0.1)}
+
+input[type=submit]{width: 70px; height:25px; border:0; background-color:#39F; font-size: 12px; color:#FFF; margin: 0 0 0 10px;}
+input[type=submit]:HOVER{background-color:#06C; color:#FFF}
+input[type=submit]:ACTIVE{background-color:#039; color:#FFF}
+
+input[type=checkbox]{-webkit-appearance:none; appearance:none; width: 15px; height: 15px; margin:0; cursor:pointer; vertical-align: sub; background:#fff; border:1px solid #dcdcdc; -webkit-border-radius:1px; -moz-border-radius:1px; border-radius:1px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; position:relative;}
+input[type=checkbox]:active{border-color:#c6c6c6; background:#ebebeb; -moz-opacity:1; -khtml-opacity:1; opacity:1}
+input[type=checkbox]:hover{border-color:#c6c6c6; -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.1); -moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.1); box-shadow:inset 0 1px 1px rgba(0,0,0,0.1);}
+input[type=checkbox]:checked{background:#FFF}
+input[type=checkbox]:checked::after{content:url("../../img/checkmark.png"); display:block; position:absolute; top:-4px; left:-5px}
+input[type=checkbox]:focus{outline:none; border-color:#4d90fe}
+
+a{color:#15c; text-decoration:none}
+a:hover{text-decoration:underline}

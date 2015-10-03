@@ -1,0 +1,89 @@
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl, dt, dd, ol, ul, li, table, tr, td, form, object, embed, article, aside, canvas, command, details, fieldset, figcaption, figure, footer, group, header, hgroup, legend, mark, menu, meter, nav, output, progress, section, summary, time, audio, video, input{margin:0; padding:0; border:0; font-family:"Microsoft Yahei",Tahoma; font-size: 12px;}
+
+.albumCard{width:1000px; height:600px; border:0; position: absolute; background-color: #FAFAFA; top:0; left:0; overflow:hidden}
+
+.albumGroupBox{width: 980px; height: 23px; border-bottom: 2px solid #ff9933; position: absolute; top: 20px; left: 10px; }
+.albumGroupBox .albumGroup{width: 100px; height: 23px; background-color: #F0F0F0; float: left; color: #444;}
+.albumGroupBox .albumGroup:HOVER{background-color: #FFCC66; cursor: default;}
+.albumGroupBox .albumGroup.focus{background-color: #ff9933;}
+.albumGroupBox .albumGroup .groupName{width:100px; height:23px; border: 0px solid #000; text-indent:1em; line-height: 23px;}
+
+.albumGroupBox .albumMenuBox{width: 40px; height:23px; line-height: 23px; position: absolute; top: 0; left: 940px;}
+.albumGroupBox .albumMenuBox .albumMenu{width: 40px; height: 23px; background: url("../../img/albumMenu.png") no-repeat 12px 4px; list-style:none;}
+.albumGroupBox .albumMenuBox .albumMenu1:HOVER{background: #A9C251 url("../../img/albumMenu.png") no-repeat 12px -22px;}
+.albumGroupBox .albumMenuBox .albumMenu.focus{background: #A9C251 url("../../img/albumMenu.png") no-repeat 12px -22px;}
+
+.albumGroupBox .albumMenuBox li a{width:70px; display:block; background:#324143; padding:5px 12px; text-decoration:none; color:#FFF; white-space:nowrap}
+.albumGroupBox .albumMenuBox li a:hover{background:#24313C}
+.albumGroupBox .albumMenuBox li ul{position:absolute; top: 23px; left: -32px; visibility:hidden; z-index: 999; -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.2); -moz-box-shadow: 0px 1px 3px rgba(0,0,0,.2); box-shadow: 0px 1px 3px rgba(0,0,0,.2);}
+.albumGroupBox .albumMenuBox li ul li{float:none; display:inline}
+.albumGroupBox .albumMenuBox li ul li a{width:auto; background:#A9C251; color:#FFF; cursor: default;}
+.albumGroupBox .albumMenuBox li ul li a:hover{background:#8EA344}
+
+.albumMainBox{width: 980px; height: 500px; position: absolute; top: 60px; left: 10px; }
+.albumMainBox .albumBox{width: 980px; height: 500px; position: absolute; top:0; left:0; display: none;}
+.albumMainBox .albumBox .album{width: 120px; height: 140px; background-color: #FFF; color: #888; border: 2px solid #FFF; float: left; margin: 0 15px 15px 0;-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,.2); -moz-box-shadow: 0px 0px 3px rgba(0,0,0,.2); box-shadow: 0px 0px 3px rgba(0,0,0,.2); }
+.albumMainBox .albumBox .album:HOVER{background-color: #E8F2FE; border: 2px solid #E8F2FE;}
+.albumMainBox .albumBox .album .albumCover{width: 120px; height: 120px; overflow: hidden;}
+.albumMainBox .albumBox .album img{width: 120px;}
+
+/* Photo main box. */
+.photoMainBox{width:1000px; height:600px; background-color:#FFF; position:absolute; top:0; left:0; overflow:hidden; display: none;}
+
+/* Photo thumbnails main box. */
+.photoMainBox .photoThumMainBox{width:1000px; height:600px; background-color:#FFF; position:absolute; top:0; left:0;}
+.photoMainBox .photoThumMainBox .albumInfo{width: 980px; height: 23px; border-bottom: 2px solid #ff9933; position: absolute; top: 20px; left: 10px; }
+.photoMainBox .photoThumMainBox .albumInfo .return{width: 40px; height: 23px; background: #f93 url("../../img/return.png") no-repeat 5px 4px; position: absolute; top: 0; left: 0;}
+.photoMainBox .photoThumMainBox .albumInfo .return:HOVER{background: #f60 url("../../img/return.png") no-repeat 5px -19px;}
+.photoMainBox .photoThumMainBox .albumInfo .return:ACTIVE{background: #c60 url("../../img/return.png") no-repeat 5px -40px;}
+.photoMainBox .photoThumMainBox .albumInfo .albumName{height: 23px; padding: 0 10px; background-color:#ff9933;  position: absolute; top: 0; left: 40px; line-height: 25px; }
+.photoMainBox .photoThumMainBox .photoThumBox{width: 980px; height: 500px; position: absolute; top: 60px; left: 10px; }
+.photoMainBox .photoThumMainBox .photoThum{width: 120px; height: 120px;margin: 0 15px 15px 0; float: left; overflow: hidden;-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,.2); -moz-box-shadow: 0px 0px 3px rgba(0,0,0,.2); box-shadow: 0px 0px 3px rgba(0,0,0,.2); }
+.photoMainBox .photoThumMainBox .photoThum img{width: 120px;}
+.photoMainBox .photoThumMainBox .thumPagedBox{width: 980px; height: 20px; position: absolute; top: 570px; left: 10px; text-align: center;}
+.photoMainBox .photoThumMainBox .thumPagedBox .thumPaged{width: 30px; height: 20px; margin: 0 5px 0 0; background: url("../../img/point.png") no-repeat 1px 3px; display: inline-block; }
+.photoMainBox .photoThumMainBox .thumPagedBox .thumPaged:hover{background: #BBB url("../../img/point.png") no-repeat 1px -19px; cursor:pointer; }
+.photoMainBox .photoThumMainBox .thumPagedBox .thumPaged:ACTIVE{background: #DDD url("../../img/point.png") no-repeat 1px -42px; cursor:pointer; }
+.photoMainBox .photoThumMainBox .thumPagedBox .thumPaged.focus{background: #DDD url("../../img/point.png") no-repeat 1px -42px; cursor:pointer; }
+
+/* Photo and review main box. */
+.photoMainBox .photoReviewMainBox{width:1000px; height:600px; background-color:#FFF; position:absolute; top:0; left:0; display: none; overflow: hidden; }
+.photoMainBox .photoReviewMainBox .photoBox{width: 700px; height: 600px; background-color: #555; display:table-cell; vertical-align:middle; text-align:center; }
+.photoMainBox .photoReviewMainBox .photoBox img{max-width: 700px; max-height: 580px; }
+
+.photoMainBox .photoReviewMainBox .photoReviewBox{width: 300px; height: 600px; background-color: #EEE; position: absolute; top: 0; left: 700px;}
+.photoMainBox .photoReviewMainBox .photoReviewBox .avatarBox{width: 300px; height: 62px; background-color: #bbb; margin: 0;}
+.photoMainBox .photoReviewMainBox .photoReviewBox .avatarBox img{max-width: 50px; max-height: 50px; border: 1px solid #FFF; margin: 5px 0 0 5px;}
+.photoMainBox .photoReviewMainBox .photoReviewBox .avatarBox .nickname{width: 228px; height: 25px; margin: -52px 0 0 67px;}
+
+.photoMainBox .photoReviewMainBox .photoReviewBox .reviewBox{width: 300px; height: 400px; }
+.photoMainBox .photoReviewMainBox .photoReviewBox .reviewBox .review{width: 280px; margin: 10px 0 0 10px;}
+.photoMainBox .photoReviewMainBox .photoReviewBox .reviewBox .review .avatar{width: 30px; height: 30px;}
+.photoMainBox .photoReviewMainBox .photoReviewBox .reviewBox .review .nickname{width: 240px; height: 25px; margin: -30px 0 0 40px;}
+.photoMainBox .photoReviewMainBox .photoReviewBox .reviewBox .review .reviewContent{width: 240px; margin: 0 0 0 40px;}
+.photoMainBox .photoReviewMainBox .photoReviewBox .reviewBox .review .reviewDate{width: 240px; margin: 0 0 0 40px; color: #AAA; }
+
+
+.photoMainBox .photoReviewMainBox .photoReviewBox .publishBox{width: 300px; margin: 20px 0 0 10px;}
+.photoMainBox .photoReviewMainBox .photoReviewBox .publishBox .reviewContent{width: 280px; height:70px; resize: none;}
+.photoMainBox .photoReviewMainBox .photoReviewBox .publishBox .operate{width: 280px; height:20px; margin: 10px 0 0 0; text-align: right; }
+.photoMainBox .photoReviewMainBox .photoReviewBox .publishBox .operate #review{width: 50px; height: 20px; }
+
+
+
+
+/* Button style */
+input[type=button]{border:0; background-color:#39F; color:#FFF}
+input[type=button]:HOVER{border:0; background-color:#06C; color:#FFF}
+input[type=button]:ACTIVE{border:0; background-color:#039; color:#FFF}
+
+
+
+
+/* Input style */
+input[type=text], textarea{padding:2px 5px; background:#fff; border:1px solid #d9d9d9; border-top:1px solid #c0c0c0; font-size:12px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+input[type=text]:hover, textarea:hover{border:1px solid #b9b9b9; border-top:1px solid #a0a0a0; -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1); -moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1); box-shadow:inset 0 1px 2px rgba(0,0,0,0.1)}
+input[type=text]:focus, textarea:focus{outline:none; border:1px solid #787c7f; -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.3); -moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.3); box-shadow:inset 0 1px 2px rgba(0,0,0,0.3)}
+
+a{color:#15c; text-decoration:none}
+a:hover{text-decoration:underline}

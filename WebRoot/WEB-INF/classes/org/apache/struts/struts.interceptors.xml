@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<!-- 名为keekan的包 -->
+	<package name="keekan" extends="struts-default">
+		<!-- 设置系统的拦截器 -->
+		<interceptors>
+			<!-- 创建登录控制拦截器 -->
+            <interceptor name="loginInterceptor" class="com.keekan.interceptor.LoginInterceptor"/>
+            <!-- 定义auctionStack拦截器 -->
+            <interceptor-stack name="auctionStack">
+            	<!-- 引用默认拦截器 -->
+                <interceptor-ref name="defaultStack"/>
+                <!-- 引用登录拦截器 -->
+                <interceptor-ref name="loginInterceptor"/>
+            </interceptor-stack>
+		</interceptors>
+		<!-- 将自定义的拦截器栈定义为默认的拦截器 -->
+		<default-interceptor-ref name="auctionStack"/>
+	</package>
+
+</struts>

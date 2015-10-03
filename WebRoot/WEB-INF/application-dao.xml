@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	 
+    
+    <bean id="userDao" class="com.keekan.dao.impl.UserDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+    
+    <bean id="signupDao" class="com.keekan.dao.impl.SignupDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="keenoPoolDao" class="com.keekan.dao.impl.KeenoPoolDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="loginDao" class="com.keekan.dao.impl.LoginDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="albumDao" class="com.keekan.dao.impl.AlbumDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="albumGroupDao" class="com.keekan.dao.impl.AlbumGroupDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="messageBoardDao" class="com.keekan.dao.impl.MessageBoardDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="friendGroupDao" class="com.keekan.dao.impl.FriendGroupDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="friendDao" class="com.keekan.dao.impl.FriendDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="avatarDao" class="com.keekan.dao.impl.AvatarDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="photoDao" class="com.keekan.dao.impl.PhotoDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="navigateDao" class="com.keekan.dao.impl.NavigateDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="photoReviewDao" class="com.keekan.dao.impl.PhotoReviewDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="photoCommentReplyDao" class="com.keekan.dao.impl.PhotoCommentReplyDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="statusDao" class="com.keekan.dao.impl.StatusDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="albumCoverDao" class="com.keekan.dao.impl.AlbumCoverDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="attestInfoDao" class="com.keekan.dao.impl.AttestInfoDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="tagDao" class="com.keekan.dao.impl.TagDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="adoreDao" class="com.keekan.dao.impl.AdoreDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="adorePhotoDao" class="com.keekan.dao.impl.AdorePhotoDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+</beans>

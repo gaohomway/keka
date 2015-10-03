@@ -1,0 +1,53 @@
+html, body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, div{font-family: "Microsoft Yahei",Tahoma;margin:0; padding:0}
+/* 头像卡 */
+.avatar-card{width:1000px; height:600px; border:0px solid red; position:absolute; top:0; left:0; overflow:hidden}
+
+/* 选择照片方式菜单 */
+.photoSelectMenu{width:230px; height:600px; border:0; background-color:#FFF; position:absolute; top:0; left:0; overflow:hidden}
+.photoSelectMenu .menuTitle{width:230px; height:49px; border:0; border-bottom:1px solid #E5E5E5; background-color:#FFF; position:relative; top:0; left:0}
+.photoSelectMenu .menuTitle p{border:0px solid red; font-size:15px; font-weight:bold; color:#555; text-align:center; line-height:50px}
+.photoSelectMenu .menu{width:229px; height:26px; border:0; border-top:1px solid #FFF; background-color:#F0F0F0; position:relative; top:0; left:0; font-size:12px; line-height:25px}
+.photoSelectMenu .menu p{text-indent:1em}
+.photoSelectMenu .menu1:HOVER{width:229px; height:26px; border:0; border-top:1px solid #FFF; background-color:#9cf; position:relative; top:0; left:0; font-size:12px; color:#FFF; line-height:25px}
+.photoSelectMenu .current{background-color:#39c; color:#FFF}
+
+/* 从相册选择菜单 */
+.album-list-box{width:230px; height:500px; border:0; background-color:#FFF; position:relative; top:0; left:0; font-size:12px; color:#000}
+.album-list-box .album-group{width:229px; height:26px; border:0; border-top:1px solid #FFF; background-color:#F0F0F0; position:relative; top:0; left:0; font-size:12px; line-height:25px}
+.album-list-box .album-group p{text-indent:1em}
+.album-list-box .album-group:HOVER{width:229px; height:26px; border:0; border-top:1px solid #FFF; background-color:#9cf; position:relative; top:0; left:0; font-size:12px; color:#FFF; line-height:25px}
+.album-list-box .album-box{width:230px; border:0px solid red; background-color:#FFF; position:relative; top:0; left:0}
+.album-list-box .album{width:230px; height:50px; border:0px solid #000}
+.album-list-box .album-cover{widows:50px; height:50px; border:0px solid red; position:relative; top:0; left:0}
+.album-list-box .album-cover img{max-width:50px; max-height:50px; border:0}
+.album-list-box .album-name{width:180px; height:50px; border:0px solid red; position:relative; top:-50px; left:50px; font-size:12px; line-height:30px}
+
+/* 上传|编辑|照片BOX */
+.photoUploadBox, .photoEditorBox, .photoSelectBox{width:770px; height:600px; border:0; border-left:1px solid #E5E5E5;background-color: #FFFFFF; position:absolute; top:0px; left:230px; overflow:hidden; display:none;}
+.avatarSelectPrompt{width:770px; height:49px; border:0; border-bottom:1px solid #E5E5E5; background-color:#FFF; position:absolute; top:0; left:0}
+.avatarOperate{width:770px; height:65px; border:0; background-color:#F7F7F7; position:absolute; top:535px; left:0}
+.photoUploadMain, .photoEditorMain, .photoSelectMain{width:770px; height:499px; border:0; border-bottom:1px solid #E5E5E5; background-color:#FFF; position:absolute; top:50px; left:0}
+
+/* 照片上传主BOX */
+.photoUploadMain .selectButton{width:100%; height:30px; border:0; text-align:center; position:relative; top:250px}
+
+/* 照片编辑主BOX */
+.photoEditorBox .avatarEditorBox{width:770px; height:350px; border:0; border-bottom:1px solid #E5E5E5; display:table-cell; vertical-align:middle; text-align:center}
+.photoEditorBox .avatarEditorBox img{max-width:770px; max-height:350px}
+.photoEditorBox .avatarPreviewBox{width:770px; height:135px; border:0px solid red; border-bottom:1px solid red; position:absolute; top:350px; left:0}
+.photoEditorBox .avatarPreviewBox .preview100{width:100px; height:100px; border:0px solid #ddd; position:absolute; top:10px; left:10px; overflow:hidden}
+.photoEditorBox .avatarPreviewBox .preview50{width:50px; height:50px; border:0px solid #ddd; position:absolute; top:60px; left:120px; overflow:hidden}
+.photoEditorBox .avatarPreviewBox .preview30{width:30px; height:30px; border:0px solid #ddd; position:absolute; top:80px; left:180px; overflow:hidden}
+.photoEditorBox .previewSize{width:220px; height:20px; border:0px solid #ddd; position:absolute; top:110px; left:10px; overflow:hidden}
+.photoEditorBox .previewSize p{float:left; font-size:11px; color:#7D7D7D}
+.photoEditorBox .previewSize .size100{width:100px; text-align:center}
+.photoEditorBox .previewSize .size50{width:50px; margin:0 10px 0 10px; text-align:center}
+.photoEditorBox .previewSize .size30{width:30px; text-align:center}
+.fileInputType{width: 150px; height: 25px; border: 0;  background-color: #39f; position: absolute; top: 0; left: 310px; font-size:12px; color:#FFF; line-height: 25px;  cursor:pointer; overflow: hidden; }
+.fileInputType:HOVER{width: 150px; height: 25px; border: 0px solid red; background-color: #06c; position: absolute; top: 0; left: 310px; font-size:12px; color:#FFF; line-height: 25px; cursor:pointer;  overflow: hidden;}
+.fileInput{width:150px;  height:25px;  border:0;  font-size:100px;  position:absolute;  top:0;  left:0; filter:alpha(opacity=0);  -moz-opacity:0;  -khtml-opacity:0;  opacity:0;  cursor:pointer; overflow:hidden}
+
+#avatarCut, #avatarCut1{position: absolute;top: 20px;left: 100px;}
+#cancel, #cancel1{position: absolute;top: 20px; left: 200px;}
+input[type=button]{height:25px; border:0; padding:0 20px 0 20px; background-color:#39f; font-size:12px; color:#FFF}
+input[type=button]:HOVER{height:25px; border:0; padding:0 20px 0 20px; background-color:#06c; font-size:12px; color:#FFF}

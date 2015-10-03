@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.keekan.bean">
+	<class name="TagsBean" table="tags">
+		<id	name="tagsId" column="tags_id">
+			<generator class="identity"/>
+		</id>
+		<property name="tagsName" column="tags_name" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="ownTagId" column="own_tag_id" type="integer" length="10" not-null="false" unique="false" update="true" insert="true"/>
+	</class>	
+</hibernate-mapping>

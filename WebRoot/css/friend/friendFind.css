@@ -1,0 +1,72 @@
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl, dt, dd, ol, ul, li, table, tr, td, form, object, embed, article, aside, canvas, command, details, fieldset, figcaption, figure, footer, group, header, hgroup, legend, mark, menu, meter, nav, output, progress, section, summary, time, audio, video, input{margin:0; padding:0; border:0; font-family:"Microsoft Yahei",Tahoma; font-size: 12px;}
+
+.friendFindCard{width:700px; height:500px; border: 0px solid #000; background-color: #FFF;position:absolute; top: 0px; left: 0px;}
+
+.findTabHead{width: 700px; height:25px; background:#EFEFEF; position:absolute; top: 0px; left:0; line-height:28px}
+.findTabHead .tabMenu{width:700px; height:25px;  position: absolute; top:0; left:0; list-style:none}
+.findTabHead .tabMenu li{height:25px; line-height:25px; background-color:#F0F0F0; padding:0 10px 0 10px; list-style:none; font-size:12px; text-align:center; float:left; cursor:pointer; color: #666;}
+.findTabHead .tabMenu li:HOVER{background-color: #DDD;}
+.findTabHead .tabMenu li.current{background-color:#FFF;}
+
+
+
+
+.findTabBody{width:700px; height: 475px; border:0; position:absolute; top: 25px; left:0; overflow:hidden}
+.findTabBody .accurateFind{width:700px; height: 475px; border:0; position:relative; top:0; left:0; overflow:hidden}
+.findTabBody .termFind{width:700px; height: 475px; border:0; position:relative; top:0; left:0; overflow:hidden}
+
+
+.accurateFind .searchBox{width: 700px; height: 60px; border: 0px solid #000; background-color: #F7F7F7; }
+.accurateFind .searchBox input[type=text]{width: 300px; height:25px; outline: none; border: 1px solid #DDD; padding: 0 5px; background-color: #FDFDFD; position: relative; top: 20px; left: 5px;}
+.accurateFind .searchBox input[type=text]:HOVER{border: 1px solid #3399FF; padding: 0 5px; background-color: #FFF; }
+.accurateFind .searchBox input[type=text]:focus{border: 1px solid #3399FF; padding: 0 5px; -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3); }
+
+.accurateFind .searchBox input[type=button]{width: 70px; height:27px; border: 0; background-color: #3399FF; font-size:12px; color:#FFF; position: relative; top: 20px; left: 5px;}
+.accurateFind .searchBox input[type=button]:HOVER{background-color: #0066CC;}
+
+
+.accurateFind .friendList{width: 700px; height: 415px; border: 0;  }
+.accurateFind .friendList .friendBox{width: 680px; height: 100px; padding: 10px; border-bottom: 1px solid #DDD;  background-color: #FFF; }
+.accurateFind .friendList .friendBox:HOVER{background-color: #CFE6F5}
+
+.accurateFind .friendList .friendBox .avatar{width: 50px; height: 50px; background-color: #ddd;}
+.accurateFind .friendList .friendBox .avatar img{max-width: 50px; max-height: 50px;}
+
+.accurateFind .friendList .friendBox .baseInof{width: 140px; height: 100px; margin: -50px 0 0 60px;}
+.accurateFind .friendList .friendBox .baseInof .nickname{width: 140px; height: 20px; line-height: 20px; cursor: default;}
+.accurateFind .friendList .friendBox .baseInof .sex{width: 140px; height: 20px; line-height: 20px; }
+.accurateFind .friendList .friendBox .baseInof .operate{width: 140px; height: 15px; cursor: default; }
+
+.accurateFind .friendList .friendBox .firstImpression{width: 480px; height: 100px; background-color: #fff; margin: -100px 0 0 200px;}
+
+.friendAddCard{width:700px; height:500px; border: 0px solid #000; background-color: #FFF;position:absolute; top: 0px; left: 700px;}
+.friendAddCard .userInfoCard{width:700px; height:500px; border: 0px solid #000; position:absolute; top: 0px; left: 0px;}
+.friendAddCard .userInfoCard .infoHead{width:700px; height:150px; border: 0px solid #000; background-image:url("../../img/userInfoCardBack.jpg"); position:absolute; top: 0px; left: 0px;}
+.friendAddCard .userInfoCard .infoHead .avatarBox{width: 100px; height:100px; border: 0; position:absolute; top: 50px; left: 10px;}
+.friendAddCard .userInfoCard .infoHead .avatarBox img{max-width: 100px; max-height:100px; border: 0;}
+
+.friendAddCard .userInfoCard .infoBody{width: 700px; height: 350px; position: absolute; top: 150px; left: 0px; font-size: 12px; overflow: hidden;}
+.friendAddCard .userInfoCard .addFriendBox{width: 700px; height: 350px; background-color: #FFF; position: absolute; top: 150px; left: 700px; font-size: 12px; overflow: hidden;}
+.friendAddCard .userInfoCard .addFriendBox .remark{width: 700px; height: 30px; border: 0; position: absolute; top: 10px; left: 10px; }
+.friendAddCard .userInfoCard .addFriendBox .remark input[type=text]{width: 300px; height:25px; outline: none; border: 1px solid #DDD; padding: 0 5px; }
+.friendAddCard .userInfoCard .addFriendBox .remark input[type=text]:HOVER{border: 1px solid #3399FF; padding: 0 5px; }
+.friendAddCard .userInfoCard .addFriendBox .remark input[type=text]:focus{border: 1px solid #3399FF; padding: 0 5px; -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3); }
+
+.friendAddCard .userInfoCard .addFriendBox .group{width: 700px; height: 30px; border: 0; position: absolute; top: 50px; left: 10px; }
+.friendAddCard .userInfoCard .addFriendBox .group select{width: 310px; height:25px; outline: none; border: 1px solid #DDD;}
+.friendAddCard .userInfoCard .addFriendBox .group select:HOVER{border: 1px solid #3399FF; }
+.friendAddCard .userInfoCard .addFriendBox .group select:focus{border: 1px solid #3399FF;}
+
+.friendAddCard .userInfoCard .addFriendBox .attestInfoBox{width: 700px; height: 65px; border: 0; position: absolute; top: 90px; left: 10px; }
+.friendAddCard .userInfoCard .addFriendBox .attestInfoBox .textPos{width: 700px; height: 65px; border: 0; position: absolute; top: 0px; left: 60px; }
+.friendAddCard .userInfoCard .addFriendBox .attestInfoBox .textPos textarea{width: 300px; height: 50px; outline: none; border: 1px solid #DDD; padding: 5px 5px;  resize:none}
+.friendAddCard .userInfoCard .addFriendBox .attestInfoBox .textPos textarea:HOVER{border: 1px solid #3399FF; padding: 5px 5px; }
+.friendAddCard .userInfoCard .addFriendBox .attestInfoBox .textPos textarea:focus{border: 1px solid #3399FF; padding: 5px 5px; -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3); }
+
+.friendAddCard .userInfoCard .addFriendBox .operate{width: 700px; height: 30px; border: 0; position: absolute; top: 160px; left: 10px; }
+.friendAddCard .userInfoCard .addFriendBox .addFinish{width: 380px; height: 100px; border: 0; position: absolute; top: 10px; left: 10px; }
+.friendAddCard .userInfoCard .addFriendBox .addFinish .correctSign{width: 30px; height: 25px; border: 0; position: absolute; top: 0; left: 0; }
+.friendAddCard .userInfoCard .addFriendBox .addFinish .pointInfo{width: 350px; height: 25px; border: 0; position: absolute; top: 0; left: 30px; text-indent: 1em; }
+.friendAddCard .userInfoCard .addFriendBox .addFinish .operate{width: 350px; height: 25px; border: 0; position: absolute; top: 35px; left: 0px; }
+
+

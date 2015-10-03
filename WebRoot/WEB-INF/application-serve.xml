@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	 
+	
+	<bean id="userServe" class="com.keekan.serve.impl.UserServeImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+	
+	<bean id="signupServe" class="com.keekan.serve.impl.SignupServeImpl">
+        <property name="signupDao" ref="signupDao"/>
+    </bean>
+    
+    <bean id="keenoPoolServe" class="com.keekan.serve.impl.KeenoPoolServeImpl">
+        <property name="keenoPoolDao" ref="keenoPoolDao"/>
+    </bean>
+    
+    <bean id="loginServe" class="com.keekan.serve.impl.LoginServeImpl">
+        <property name="loginDao" ref="loginDao"/>
+    </bean>
+    
+    <bean id="albumServe" class="com.keekan.serve.impl.AlbumServeImpl">
+        <property name="albumDao" ref="albumDao"/>
+    </bean>
+    
+    <bean id="albumGroupServe" class="com.keekan.serve.impl.AlbumGroupServeImpl">
+        <property name="albumGroupDao" ref="albumGroupDao"/>
+    </bean>
+    
+    <bean id="messageBoardServe" class="com.keekan.serve.impl.MessageBoardServeImpl">
+        <property name="messageBoardDao" ref="messageBoardDao"/>
+    </bean>
+    
+    <bean id="friendGroupServe" class="com.keekan.serve.impl.FriendGroupServeImpl">
+        <property name="friendGroupDao" ref="friendGroupDao"/>
+    </bean>
+    
+    <bean id="friendServe" class="com.keekan.serve.impl.FriendServeImpl">
+        <property name="friendDao" ref="friendDao"/>
+    </bean>
+    
+    <bean id="avatarServe" class="com.keekan.serve.impl.AvatarServeImpl">
+        <property name="avatarDao" ref="avatarDao"/>
+    </bean>
+    
+    <bean id="photoServe" class="com.keekan.serve.impl.PhotoServeImpl">
+        <property name="photoDao" ref="photoDao"/>
+    </bean>
+    
+    <bean id="navigateServe" class="com.keekan.serve.impl.NavigateServeImpl">
+        <property name="navigateDao" ref="navigateDao"/>
+    </bean>
+    
+    <bean id="photoReviewServe" class="com.keekan.serve.impl.PhotoReviewServeImpl">
+        <property name="photoReviewDao" ref="photoReviewDao"/>
+    </bean>
+    
+    <bean id="photoCommentReplyServe" class="com.keekan.serve.impl.PhotoCommentReplyServeImpl">
+        <property name="photoCommentReplyDao" ref="photoCommentReplyDao"/>
+    </bean>
+    
+     <bean id="statusServe" class="com.keekan.serve.impl.StatusServeImpl">
+        <property name="statusDao" ref="statusDao"/>
+    </bean>
+    
+    <bean id="albumCoverServe" class="com.keekan.serve.impl.AlbumCoverServeImpl">
+        <property name="albumCoverDao" ref="albumCoverDao"/>
+    </bean>
+    
+    <bean id="attestInfoServe" class="com.keekan.serve.impl.AttestInfoServeImpl">
+        <property name="attestInfoDao" ref="attestInfoDao"/>
+    </bean>
+    
+    <bean id="tagServe" class="com.keekan.serve.impl.TagServeImpl">
+        <property name="tagDao" ref="tagDao"/>
+    </bean>
+    
+    <bean id="adoreServe" class="com.keekan.serve.impl.AdoreServeImpl">
+        <property name="adoreDao" ref="adoreDao"/>
+    </bean>
+
+    <bean id="adorePhotoServe" class="com.keekan.serve.impl.AdorePhotoServeImpl">
+        <property name="adorePhotoDao" ref="adorePhotoDao"/>
+    </bean>
+</beans>

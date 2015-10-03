@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="photo" extends="keekan">
+	
+		<!-- 上传照片 -->
+        <action name="uploadPhoto" class="com.keekan.action.PhotoAction" method="photoUpload">
+			<result name="success">/jsp/photo/photoUp.jsp</result>
+			<result name="fails">/jsp/photo/photoUp.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+        
+        <!-- 上传照片完成 -->
+        <action name="photoUpFinish" class="com.keekan.action.PhotoAction" method="photoUpFinish">
+			<result name="success">/jsp/photo/photoUpFinish.jsp</result>
+			<result name="fails">/jsp/photo/photoUpFinish.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+		
+        <action name="UploadPhotoAction11" class="com.keekan.action.PictureAction">
+			<interceptor-ref name="fileUpload">
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<param name="maximumSize">90000000000</param>
+			</interceptor-ref>
+			
+			<param name="savePath">/upload</param>
+			<result name="input">/upload.jsp</result>
+			<result name="success">uploadSucc.jsp</result>
+			<interceptor-ref name="defaultStack" />
+		</action>
+        
+        <action name="photoUploadAction" class="com.keekan.action.PhotoUploadAction" method="photoUpload">
+			<result name="addAlbum">/jsp/album.jsp</result>
+			<result name="viewAllAlbumSuccess">/jsp/album.jsp</result>
+			<result name="viewAllAlbumSuccessFails">/jsp/album.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+        
+        <action name="photoUploadAction" class="com.keekan.action.PhotoUploadAction" method="photoUpload">
+			<result name="addAlbum">/jsp/album.jsp</result>
+			<result name="viewAllAlbumSuccess">/jsp/album.jsp</result>
+			<result name="viewAllAlbumSuccessFails">/jsp/album.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+		
+		<action name="photoAction" class="com.keekan.action.PhotoUpload5Action" method="photoUpload">
+			<result name="uploadPhotoInitSuccess">/jsp/uploadPhoto.jsp</result>
+            <interceptor-ref name="fileUpload"> 
+                <param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg,image/pjpeg</param> 
+            </interceptor-ref> 
+            <param name="savePath">/upload</param>
+			<result name="input">/upload.jsp</result>	
+			<result>/succ.jsp</result>	
+			<interceptor-ref name="defaultStack"/>
+		</action>
+		
+	</package>
+	
+	<package name="photo-json" extends="json-default">
+	
+		<!-- 保存照片信息 -->
+		<action name="savePhotoInof" class="com.keekan.action.PhotoAction" method="savePhotoInfo">
+             <result type="json"></result>                   
+        </action>
+		
+		<!-- 查看缩略图 -->
+		<action name="photoThum" class="com.keekan.action.PhotoAction" method="viewPhotoThum">
+             <result type="json"></result>                   
+        </action>
+        
+        <!-- 查看分页照片 -->
+		<action name="viewPhotoPage" class="com.keekan.action.PhotoAction" method="viewPhotoPage">
+             <result type="json"></result>                   
+        </action>
+		
+		<!-- 查看单张照片及评论 -->
+		<action name="viewPhotoAction" class="com.keekan.action.PhotoAction" method="viewPhotoAndReview">
+             <result type="json"></result>                   
+        </action>
+		
+		<!-- 照片评论回复 -->
+    	<action name="photoCommentReply" class="com.keekan.action.PhotoCommentReplyAction" method="addPhotoCommentReply">
+			<result type="json"></result>
+		</action>
+	</package>
+	
+</struts>

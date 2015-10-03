@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="attestInfo" extends="keekan">
+		
+		<!--<action name="" class="com.keekan.action.AttestInfoAction">
+			<result name="addAlbum">/jsp/album/album.jsp</result>
+			<result name="viewAllAlbumSuccess">/jsp/album/album.jsp</result>
+			<result name="viewAllAlbumSuccessFails">/jsp/album/album.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+        
+	--></package>
+	
+	<package name="attestInfo-json" extends="json-default">
+	
+		<!-- 添加验证信息 -->
+		<action name="addAttestInfo" class="com.keekan.action.AttestInfoAction" method="addAttestInfo">
+             <result type="json"></result>                   
+        </action>
+	
+	</package>
+
+</struts>

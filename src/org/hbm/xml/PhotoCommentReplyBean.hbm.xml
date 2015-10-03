@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.keekan.bean">
+	<class name="PhotoCommentReplyBean" table="photo_comment_reply">
+		<id	name="replyId" column="reply_id">
+			<generator class="identity"/>
+		</id>
+		<property name="commentId" column="comment_id" type="integer" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="replyKeeno" column="reply_keeno" type="integer" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="replyContent" column="reply_content" type="string" length="500" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="replyDate" column="reply_date" type="string" length="50" not-null="false" unique="false" update="true" insert="true"/>
+	</class>	
+</hibernate-mapping>

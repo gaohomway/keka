@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="friendGroup" extends="keekan">
+	
+		<!-- 好友Action -->
+		<action name="friend1" class="com.keekan.action.FriendAction" method="friend">
+			<result name="friendSuccess">/jsp/friend.jsp</result>    
+			<result name="friendFails">/jsp/friend.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+        </action>
+        
+	</package>
+	
+	<package name="friendGroup-json" extends="json-default">
+	
+		<!-- 添加好友分组 -->
+		<action name="addFriendGroup" class="com.keekan.action.FriendGroupAction" method="addFriendGroup">
+             <result type="json"></result>                   
+        </action>
+        
+        <!-- 删除好友分组 -->
+		<action name="deleteFriendGroup" class="com.keekan.action.FriendGroupAction" method="deleteFriendGroup">
+             <result type="json"></result>                   
+        </action>
+        
+        <!-- 删除好友分组 -->
+		<action name="editFriendGroup" class="com.keekan.action.FriendGroupAction" method="editFriendGroup">
+             <result type="json"></result>                   
+        </action>
+        
+        <!-- 搜索好友 -->
+		<action name="searchFriend1" class="com.keekan.action.FriendAction" method="searchFriend">
+             <result type="json"></result>                   
+        </action>
+        
+        
+	</package>
+</struts>

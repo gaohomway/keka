@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: arial, helvetica, sans-serif;
+}
+html,body{
+	font-size: 12px;
+}
+.home-title-box {
+	width: 890px;
+	height: 15px;
+	border: 1px solid #458AFD;
+	border-bottom: 0;
+	background-color: #458AFD;
+	text-align: left;
+	padding: 5px;
+}
+.home-title-box h6{
+	color: #000000;
+}
+.home-main-box {
+	width: 900px;
+	min-height: 900px;
+	border: 1px solid #458AFD;
+	text-align: left;
+}
+.home-left-box{
+	width: 300px;
+	height: 900px;
+	border: 0;
+	border-right: 1px solid #2672EC;
+}
+.avatar-main-box{
+	width: 150px;
+	height: 150px;
+	border: 1px solid #ddd;
+}
+.home-list-box{
+	width: 250px;
+	height: 400px;
+	border: 1px solid #ddd;
+}
+.avatar-main-box{
+	width: 147px;
+	height: 147px;
+	border: 3px solid #FFFFFF;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+.avatar-main-box img{
+	max-width: 147px;
+	max-height: 147px;
+	border: 0;
+}
+.avatar-main-box img:hover{
+	max-width: 147px;
+	max-height: 147px;
+	border: 0;
+}
+.friend-list-box{
+	width: 300px;
+	height: 500px;
+	border: 0;
+	border-top: 1px solid #2672EC;
+	border-bottom: 1px solid #2672EC;
+	position: relative;
+	top: 50px;
+	left: 0;
+	overflow: hidden;
+	overflow-y: auto;
+}
+.group-board-box{
+	width: 295px;
+	height: 18px;
+	border-top: 1px solid #EEE;
+	border-bottom: 0px solid #EEE;
+	background: #FFFFFF;
+	padding: 10px 0 0 5px;
+}
+.group-board-box .arrow{
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	border-top: 5px solid #FFFFFF;
+	border-left: 5px solid #FF3300;
+	border-bottom: 5px solid #FFFFCC;
+}
+.group-board-box .arrow:HOVER{
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	border-top: 5px solid #E6EFEA;
+	border-left: 5px solid #FF3300;
+	border-bottom: 5px solid #FFFFCC;
+}
+.group-board-box .group-name{
+	width: 100%;
+	height: 100%;
+	border: 0px solid red;
+	position: relative;
+	top: -15px;
+	left: 20px;
+}
+.group-board-box:hover{
+	width: 295px;
+	height: 18px;
+	border-top: 1px solid #FFF;
+	border-bottom: 0px solid #FFF;
+	background: #E6EFEA;
+	padding: 10px 0 0 5px;
+}
+.selected{
+	 background-color: #E6EFEA;
+}
+.friend-main-box{
+	display: none;	
+}
+.friend-box{
+	width: 295px;
+	height: 50px;
+	border: 1px solid #ddd;
+	padding-top: 3px;
+	padding-left: 3px;
+}
+.friend-box .avatar-box{
+	width: 45px;
+	height: 45px;
+	border: 0px solid #ddd;
+}
+.friend-box .avatar-box img{
+	width: 45px;
+	height: 45px;
+	border: 0;
+}

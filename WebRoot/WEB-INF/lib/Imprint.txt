@@ -1,0 +1,7 @@
+
+Framework of this project Imprint
+
+struts2: struts-2.3.4.1
+hibernate： hibernate-3.2
+spring: spring-2.5.6
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="avatar" extends="keekan">
+		
+		<!-- 头像 -->
+		<action name="avatar" class="com.keekan.action.AvatarAction" method="avatar">
+			<result name="success">/jsp/avatar/avatar.jsp</result>
+			<result name="fail">/jsp/avatar/avatar.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+       	</action>
+		
+		<!-- 选择头像照片 -->
+		<action name="avatarEditor" class="com.keekan.action.AvatarAction" method="avatarEditor">
+			<result name="success">/jsp/avatar/avatarEditor.jsp</result>
+			<result name="fail">/jsp/avatar/avatar.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+       	</action>
+       	
+		<!-- 头像上传照片 -->
+		<action name="avatarUpload" class="com.keekan.action.AvatarAction" method="avatarUpload">
+       		<interceptor-ref name="fileUpload">
+                <param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param> 
+                <param name="maximumSize">90000000000</param> 
+            </interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+       	</action>
+		
+	</package>
+	
+	<package name="avatar-json" extends="json-default">
+		
+    	<!-- 头像切割 -->
+		<action name="avatarCut" class="com.keekan.action.AvatarAction" method="avatarCut">
+			<result type="json"></result>
+			<interceptor-ref name="defaultStack"/>
+       	</action>
+       	
+    </package>
+</struts>

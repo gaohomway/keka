@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.keekan.bean">
+	<class name="FriendBean" table="friend">
+		<id	name="friendId" column="friend_id">
+			<generator class="identity"/>
+		</id>
+		<property name="keeno" column="keeno" type="integer" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="friendKeeno" column="friend_keeno" type="integer" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="ownFriendGroupId" column="own_friend_group_id" type="integer" length="10" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="remarkName" column="remark_name" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+	</class>	
+</hibernate-mapping>

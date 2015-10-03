@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.navigate-card {
+	width: 1000px;
+	height: 600px;
+	border: 0px solid red;
+	overflow: hidden;
+}
+.navigate-sort{
+	width: 230px;
+	height: 600px;
+	border: 1px solid red;
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+}
+.navigate-box {
+	width: 945px;
+	height: 545px;
+	border: 0px solid red;
+	position: relative;
+	top: 25px;
+	left: 25px;
+	overflow: hidden;
+}
+.navigate-item{
+	width: 140px;
+	height: 40px;
+	border: 0;
+	background-color: #0080FF;
+	padding: 5px 5px 5px 5px;
+	margin: 5px;
+	float: left;
+}
+
+.navigate-item:HOVER{
+	width: 140px;
+	height: 40px;
+	border: 0;
+	background-color: #008FFF;
+	padding: 5px 5px 5px 5px;
+	cursor: pointer;
+}
+.navigate-item .navigate-icon{
+	width: 40px;
+	height: 40px;
+	border: 0px solid red;
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.navigate-item .navigate-name{
+	width: 100px;
+	height: 40px;
+	border: 0px solid red;
+	position: relative;
+	top: -40px;
+	left: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+	overflow: hidden;
+}
+
+.navigate-item .navigate-icon img{
+	max-width: 40px;
+	max-height: 40px;
+	border: 0;
+}
+.navigate-item p{
+	
+}

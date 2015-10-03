@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="albumGroup" extends="keekan">
+		
+	</package>
+	
+	<package name="albumGroup-json" extends="json-default">
+	
+		<!-- 添加相册分组 -->
+		<action name="addAlbumGroup" class="com.keekan.action.AlbumGroupAction" method="addAlbumGroup">
+             <result type="json"></result>                   
+        </action>
+        
+        <!-- 删除相册分组 -->
+		<action name="deleteAlbumGroup" class="com.keekan.action.AlbumGroupAction" method="deleteAlbumGroup">
+             <result type="json"></result>                   
+        </action>
+        
+        <!-- 编辑相册分组 -->
+		<action name="editAlbumGroup" class="com.keekan.action.AlbumGroupAction" method="editAlbumGroup">
+             <result type="json"></result>                   
+        </action>
+        
+	</package>
+
+</struts>

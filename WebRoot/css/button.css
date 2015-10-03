@@ -1,0 +1,20 @@
+div, p, input[type=submit], input[type=button]{font-family:"Microsoft Yahei",Tahoma}
+
+div{width:1100px; height:100px; border:0px solid #000; margin-left:auto; margin-right:auto; font-size:12px}
+div p{text-align:center; font-size:25px; font-weight:bold; color:#666}
+
+.gray input[type=submit], .gray input[type=button]{width:200px; height:25px; border:0; background-color:#ccc; color:#FFF}
+.gray input[type=submit]:HOVER, .gray input[type=button]:HOVER{width:200px; height:25px; border:0; background-color:#999; color:#FFF}
+.gray input[type=submit]:ACTIVE, .gray input[type=button]:ACTIVE{width:200px; height:25px; border:0; background-color:#666; color:#FFF}
+
+.blue input[type=submit], .blue input[type=button]{width:200px; height:25px; border:0; background-color:#39F; color:#FFF}
+.blue input[type=submit]:HOVER, .blue input[type=button]:HOVER{width:200px; height:25px; border:0; background-color:#06C; color:#FFF}
+.blue input[type=submit]:ACTIVE, .blue input[type=button]:ACTIVE{width:200px; height:25px; border:0; background-color:#039; color:#FFF}
+
+.yellow input[type=submit], .yellow input[type=button]{width:200px; height:25px; border:0; background-color:#f93; color:#FFF}
+.yellow input[type=submit]:HOVER, .yellow input[type=button]:HOVER{width:200px; height:25px; border:0; background-color:#f60; color:#FFF}
+.yellow input[type=submit]:ACTIVE, .yellow input[type=button]:ACTIVE{width:200px; height:25px; border:0; background-color:#c60; color:#FFF}
+
+.green input[type=submit], .green input[type=button]{width:200px; height:25px; border:0; background-color:#6c3; color:#FFF}
+.green input[type=submit]:HOVER, .green input[type=button]:HOVER{width:200px; height:25px; border:0; background-color:#390; color:#FFF}
+.green input[type=submit]:ACTIVE, .green input[type=button]:ACTIVE{width:200px; height:25px; border:0; background-color:#360; color:#FFF}

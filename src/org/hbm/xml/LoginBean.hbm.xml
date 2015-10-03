@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.keekan.bean">
+	<class name="LoginBean" table="login">
+		<id	name="id" column="id">
+			<generator class="identity"/>
+		</id>
+		<property name="keeno" column="keeno" type="integer" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="password" column="password" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+	</class>	
+</hibernate-mapping>

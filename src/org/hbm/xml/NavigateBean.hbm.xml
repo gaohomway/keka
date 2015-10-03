@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.keekan.bean">
+	<class name="NavigateBean" table="navigate">
+		<id	name="navigateId" column="navigate_id">
+			<generator class="identity"/>
+		</id>
+		<property name="navigateName" column="navigate_name" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="navigateURL" column="navigate_url" type="string" length="300" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="navigateIcon" column="navigate_icon" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="navigateSorting" column="navigate_sorting" type="integer" length="10" not-null="false" unique="false" update="true" insert="true"/>
+	</class>	
+</hibernate-mapping>

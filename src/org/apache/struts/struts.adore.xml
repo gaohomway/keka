@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="adore" extends="keekan">
+		
+		<!-- 倾心 -->
+		<action name="adore" class="com.keekan.action.AdoreAction" method="adore">
+			<result name="success">/jsp/adore.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+        
+	</package>
+	
+	<package name="adore-json" extends="json-default">
+	 
+	 <!-- 添加倾心 -->
+		<action name="addAdore" class="com.keekan.action.AdoreAction" method="addAdore">
+             <result type="json"></result>                   
+        </action>
+        
+	</package>
+
+</struts>

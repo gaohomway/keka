@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<!-- 设置默认编码集为UTF-8 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+
+	<!-- 设置默认Locale(语言环境)为zh_CN -->
+	<constant name="struts.locale" value="zh_CN" />
+
+	<!-- 设置国际化资源文件，多个文件之间用逗号分隔 -->
+	<constant name="struts.custom.i18n.resources" value="messageResource" />
+
+	<!-- 设置是否开发模式，开发时为true，上线后为false -->
+	<constant name="struts.devMode" value="true" />
+
+	<!-- 设置Struts2的默认主题为simple -->
+	<constant name="struts.ui.theme" value="simple" />
+	
+	<!-- 设置Action默认后缀 -->
+	<constant name="struts.action.extension" value="html" /> 
+	
+	<!-- 拦截器配置文件 -->
+	<include file="org/apache/struts/struts.interceptors.xml" />
+	
+	<!-- 帐号配置文件 -->
+	<include file="org/apache/struts/struts.accounts.xml" />
+	
+	<!-- 相册配置文件 -->
+	<include file="org/apache/struts/struts.album.xml" />
+	
+	<!-- 相册分组配置文件 -->
+	<include file="org/apache/struts/struts.albumGroup.xml" />
+	
+	<!-- 照片配置文件 -->
+	<include file="org/apache/struts/struts.photo.xml" />
+	
+	<!-- 照片评论配置文件 -->
+	<include file="org/apache/struts/struts.photoReview.xml" />
+	
+	<!-- 头像配置文件 -->
+	<include file="org/apache/struts/struts.avatar.xml" />
+	
+	<!-- 好友配置文件 -->
+	<include file="org/apache/struts/struts.friend.xml" />
+	
+	<!-- 好友分组配置文件 -->
+	<include file="org/apache/struts/struts.friendGroup.xml" />
+	
+	<!-- 名片配置文件 -->
+	<include file="org/apache/struts/struts.carte.xml" />
+	
+	<!-- 导航配置文件 -->
+	<include file="org/apache/struts/struts.navigate.xml" />
+	
+	<!-- 验证信息配置文件 -->
+	<include file="org/apache/struts/struts.attestInfo.xml" />
+	
+	<!-- 标签配置文件 -->
+	<include file="org/apache/struts/struts.tag.xml" />
+	
+	<!-- 标签配置文件 -->
+	<include file="org/apache/struts/struts.music.xml" />
+	
+	<!-- 倾心配置文件 -->
+	<include file="org/apache/struts/struts.adore.xml" />
+	
+	<!-- 倾心照片配置文件 -->
+	<include file="org/apache/struts/struts.adorePhoto.xml" />
+</struts>

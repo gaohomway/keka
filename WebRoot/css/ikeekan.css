@@ -1,0 +1,108 @@
+html,body,* {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: arial, helvetica, sans-serif;
+}
+body {
+	background-color: #FFF;
+	background-image: url("../img/login_background.png");
+}
+.logo-bar {
+	width: 100%;
+	height: 35px;
+	border: 0;
+	background: #2672EC;
+	background-size: 100%;
+	border-radius: 0px;
+	padding-top: 0;
+	z-index: 2;
+}
+.top-navigation-bar {
+	width: 900px;
+	height: 30px;
+	border: 0px solid #ddd;
+	margin: -33px auto 0px auto;
+	text-align: left;
+}
+
+.keekan-font {
+	font-family: Helvetica;
+	font-size: 27PX;
+	font-weight: 300;
+	color: #FFFFFF;
+}
+
+.product-main-box {
+	width: 910px;
+	min-height: 900px;
+	border: 0px solid #000;
+	margin: 400px auto 0px auto;
+}
+.internal-navigation-bar{
+	position: absolute;
+	left: 950px;
+	top: 400px;
+}
+.navigation-ol{
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+.navigation-li {
+	float: left;
+	line-height: 19px
+}
+.navigation-li a{
+	padding: 0 5px;
+}
+.main-page-iframe-box{
+	width: 980px;
+	height: 800px;
+	border: 1px solid #ddd;
+}
+.selected{
+	background-color: #0080FF;
+}
+.product-iframe{
+	width: 905px;
+	height: 1000px;
+	border: 0px solid red;
+}
+#avatarEditorIframe{
+	width: 435px;
+	height: 370px;
+	border: 0px solid red;
+}
+#createAlbumIframe{
+	width: 435px;
+	height: 370px;
+	border: 0px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.copyright-main-box{
+	width: 990px;
+	height: 50px;
+	border: 0px solid #000;
+	padding: 10px 0 0 0;
+	text-align: center;
+	margin: 0px auto 0px auto; 
+}

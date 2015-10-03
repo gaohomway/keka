@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.keekan.bean">
+	<class name="MessageBoardBean" table="message_board">
+		<id	name="messageId" column="message_id">
+			<generator class="identity"/>
+		</id>
+		<property name="keeno" column="keeno" type="integer" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="friendKeeno" column="friend_keeno" type="integer" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="messageContent" column="message_content" type="string" length="1000" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="messageDate" column="message_date" type="date" length="50" not-null="false" unique="false" update="true" insert="true"/>
+	</class>	
+</hibernate-mapping>

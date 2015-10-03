@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="carte" extends="keekan">
+		
+		<!-- 名片初始化 -->
+        <action name="carte" class="com.keekan.action.CarteAction" method="carte">
+			<result name="carteSuccess">/jsp/carte.jsp</result>
+			<result name="carteFails">/jsp/myka.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+        
+		<action name="PersonalInfoAction" class="com.keekan.action.PersonalInfoAction" >
+			<result name="viewPersonalInfoSuccess">/jsp/personalInfo.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+		
+	</package>
+
+</struts>

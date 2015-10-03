@@ -1,0 +1,57 @@
+html,body,* {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: arial, helvetica, sans-serif;
+}
+ 
+.leave-message-title-box {
+	width: 890px;
+	height: 15px;
+	border: 1px solid #ddd;
+	border-bottom: 0;
+	background-color: #f0f0f0;
+	padding: 5px;
+}
+.leave-message-title-box h6{
+	color: #545454;
+}
+.leave-message-main-box {
+	width: 900px;
+	min-height: 600px;
+	border: 1px solid #ddd;
+	text-align: left;
+}
+.masters-message-main-box{
+	width: 868px;
+	min-height: 200px;
+	border: 1px solid #ddd;
+	margin: 10px 10px 10px 10px;
+	text-align: center;
+	padding: 5px;
+}
+.masters-message-main-box hr{
+	border: 0;
+	border-bottom: 1px solid #ddd;
+}
+.leave-submit-box{
+	width: 880px;
+	height: 20px;
+	border: 0px solid #ddd;
+	text-align: right;
+}
+.editor-box{
+	width: 952px;
+	border: 0px solid red;
+	margin: 10px 10px 10px 10px;
+}
+.leave-content-main-box {
+	width: 880px;
+	min-height: 200px;
+	border: 1px solid #ddd;
+	margin: 10px 0 10px 10px;
+}
+.leave-content-iframe {
+	width: 880px;
+	border: 0px solid #ddd; 
+}

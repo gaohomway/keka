@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.keekan.bean">
+	<class name="AvatarBean" table="avatar">
+		<id	name="avatarId" column="avatar_id">
+			<generator class="identity"/>
+		</id>
+		<property name="keeno" column="keeno" type="integer" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="bigAvatar" column="big_avatar" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="midAvatar" column="mid_avatar" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="smallAvatar" column="small_avatar" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="updateDate" column="update_date" type="string" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="inuse" column="inuse" type="string" length="10" not-null="false" unique="false" update="true" insert="true"/>
+	</class>	
+</hibernate-mapping>

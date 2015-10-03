@@ -1,0 +1,39 @@
+.jscroll-c{
+	position:relative;
+	top:0px;
+	z-index:9999;
+	zoom:1;
+}
+
+.jscroll-e{
+	height:100%;
+	-moz-user-select:none;
+	position:absolute;
+	top:0px;
+	right:0;
+	overflow:hidden;
+	z-index:10000;
+}
+.jscroll-u{
+	width:100%;
+	position:absolute;
+	top:0px;
+	left:0;
+	background:blue;
+	overflow:hidden;
+}
+.jscroll-h{
+	background:green;
+	position:absolute;
+	left:0;
+	-moz-user-select:none;
+	border:1px solid;
+}
+.jscroll-d{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	left:0;
+	background:blue;
+	overflow:hidden
+}

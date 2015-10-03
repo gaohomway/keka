@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.keekan.bean">
+	<class name="UserBean"	table="user">
+		<id	name="userId" type="integer" column="user_id">
+			<generator class="identity"/>
+		</id>
+		<property name="keeno" column="keeno" type="integer" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		
+		<property name="nickname" column="nickname" type="string" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="name" column="name" type="string" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="englishName" column="english_name" type="string" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		
+		<property name="sex" column="sex" type="string" length="10" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="birthday" column="birthday" type="string" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="age" column="age" type="integer" length="10" not-null="false" unique="false" update="true" insert="true"/>
+		
+		<property name="zodiac" column="zodiac" type="string" length="10" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="constellation" column="constellation" type="string" length="10" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="bloodType" column="bloodType" type="string" length="10" not-null="false" unique="false" update="true" insert="true"/>
+		
+		<property name="feelin" column="feelin" type="string" length="30" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="feelinProclaim" column="feelin_proclaim" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		
+		<property name="smoke" column="smoke" type="string" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="drink" column="drink" type="string" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="sleep" column="sleep" type="string" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		
+		<property name="nation" column="nation" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="city" column="city" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="area" column="area" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		
+		<property name="homeNation" column="home_nation" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="homeCity" column="home_city" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="homeArea" column="home_area" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		
+		<property name="explains" column="explains" type="text" length="300" not-null="false" unique="false" update="true" insert="true"/>
+		
+		<property name="telephone" column="telephone" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="mobileNumber" column="mobile_number" type="integer" not-null="false" unique="false" update="true" insert="true"/>
+		
+		<property name="email" column="email" type="string" length="50" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="homepage" column="homepage" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		
+		<property name="vocation" column="vocation" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="education" column="education" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="school" column="school" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="language" column="language" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		
+		<property name="signupIp" column="signup_ip" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+		<property name="signupDate" column="signup_date" type="string" length="100" not-null="false" unique="false" update="true" insert="true"/>
+	</class>	
+</hibernate-mapping>

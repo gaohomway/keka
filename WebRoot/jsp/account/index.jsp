@@ -1,0 +1,1 @@
+<jsp:forward page="loginInit.html"></jsp:forward>

@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #FFF;
+	background-image: url("../img/login_background.jpg");
+}
+
+.keekan-logo {
+	width: 1000px;
+	height: 50px;
+	border: 0px solid #000;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.keekan-logo p {
+	width: 500px;
+	border: 0px solid #000;
+	padding: 10px 0 0 0;
+	margin: 0; font-family : Helvetica;
+	font-size: 40px;
+	font-weight: 500;
+	color: #FFFFFF;
+	font-family: Helvetica;
+}
+.welcome-box{
+	width: 980px;
+	height: 380px;
+	border: 0px solid #000;
+	background-color: #FFFFFF;
+	padding: 10px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.welcome-box p{
+	font-size: 15px;
+	margin: 10px 0 0 0;
+}
+
+.welcome-box input[type=submit]{
+	width: 70px;
+	height: 30px;
+	border: 1px solid #BBBBBB;
+	background-color: #FFFFFF;
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+	cursor: pointer;
+}
+.welcome-box input[type=submit]:HOVER{
+	width: 70px;
+	height: 30px;
+	border: 1px solid #BBBBBB;
+	background-color: #FFFFFF;
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	cursor: pointer;
+}
+.welcome-box input[type=submit]:FOCUS{
+	width: 70px;
+	height: 30px;
+	border: 1px solid #BBBBBB;
+	background-color: #FFFFFF;
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+	cursor: pointer;
+}

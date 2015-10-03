@@ -1,0 +1,26 @@
+html, body, div, h1, h2, h3, h4, h5, h6, hr, p, img, dl, dt, dd, ol, ul, li, table, tr, td, form, object, embed, article, aside, canvas, command, details, fieldset, figcaption, figure, footer, group, header, hgroup, input, legend, mark, menu, meter, nav, output, progress, section, summary, time, audio, video{margin:0; padding:0; border:0; font-family:"Microsoft Yahei",Tahoma; font-size: 12px;}
+
+.musicCard{width:1000px; height:600px; border:0; position: absolute; top:0; left:0; overflow:hidden}
+.musicListBox{width:230px; height:600px; background-color:#FFF; position:absolute; top:0; left:0; overflow:hidden}
+
+/* Friend tab head*/
+.musicListBox .musicTabHead{width:230px; height:25px; border:0; background:#EFEFEF; position:absolute; top: 0px; left:0; line-height:28px}
+.musicListBox .musicTabHead .tabMenu{width:230px; height:25px; position: absolute; top:0; left:0; list-style:none}
+.musicListBox .musicTabHead .tabMenu li{height:25px; line-height:25px; background-color:#F0F0F0; padding:0 10px 0 10px; list-style:none; font-size:12px; text-align:center; float:left; cursor:pointer; color: #666;}
+.musicListBox .musicTabHead .tabMenu li:HOVER{background-color: #DDD;}
+.musicListBox .musicTabHead .tabMenu li.current{background-color:#FFF;}
+.musicListBox .musicTabHead .tabMenu li.manageMenuCurrent{background-color:#DDDDDD; padding: 0 10px 0 10px;}
+.musicListBox .musicTabHead .tabMenu li ul {width: 230px; border: 0; background-color: #DDDDDD; position: absolute; top: 25px; left: 0px; visibility: hidden; overflow: hidden; z-index: 50; }
+.musicListBox .musicTabHead .tabMenu li ul li{width: 200px; height: 24px; border-left: 1px solid #FAFAFA; border-bottom: 1px solid #FAFAFA; margin-left: 30px; background-color:#DDDDDD; display: inline; text-align: left;}
+.musicListBox .musicTabHead .tabMenu li ul li:HOVER{width: 200px; height:24px; border-left: 1px solid #FAFAFA; border-bottom: 1px solid #FAFAFA; margin-left: 30px; background-color: #D1E2F2; display: inline; text-align: left;}
+.musicListBox .musicTabHead .tabMenu li ul li a{width: auto; text-decoration: none; color: #000000;}
+
+/* Friend tab body*/
+.musicListBox .friendTabBody{width:230px; height:550px; background-color: #FBFBFB; position:absolute; top: 25px; left:0; overflow:hidden}
+.musicListBox .friendTabBody .musicListBoxBox{width:230px; height:550px; border:0px solid #000; position:relative; top:0; left:0; overflow-y:auto}
+
+/* Friend group. */
+.musicListBoxBox .friendGroup{width:230px; height:25px; border-bottom:1px solid #F3F3F3; background: #FEFEFE url("../../img/arrow.png") no-repeat 5px 5px; position:relative; top:0; left:0; font-size:12px; color: #444; line-height:25px}
+.musicListBoxBox .friendGroup:HOVER{background-color: #F3F3F3;}
+.musicListBoxBox .friendGroup.focus{background: #F3F3F3 url("../../img/arrow.png") no-repeat 5px -12px;}
+.musicListBoxBox .friendGroup .groupName{width:210px; height:25px; position: absolute; top:0; left:20px; text-indent: 5px;}

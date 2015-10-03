@@ -1,0 +1,47 @@
+*{font-family: "Microsoft Yahei",Tahoma;margin:0; padding:0}
+.photoUpFinishCard{width:1000px; height:600px; border:0px solid red; position:absolute; top:0; left:0; overflow:hidden}
+
+.photoUpFinishMenu{width:230px; height:600px; border:0; background-color:#FFF; position:absolute; top:0; left:0; overflow:hidden}
+.photoUpFinishMenu .menuTitle{width:230px; height:49px; border:0; border-bottom:1px solid #E5E5E5; background-color:#FFF; position:relative; top:0; left:0}
+.photoUpFinishMenu .menuTitle p{border:0px solid red; font-size:15px; font-weight:bold; color:#555; text-align:center; line-height:50px}
+.photoUpFinishMenu .menu{width:229px; height:26px; border:0; border-top:1px solid #FFF; background-color:#F0F0F0; position:relative; top:0; left:0; font-size:12px; line-height:25px}
+.photoUpFinishMenu .menu p{text-indent:1em}
+.photoUpFinishMenu .menu:HOVER{width:229px; height:26px; border:0; border-top:1px solid #FFF; background-color:#9cf; position:relative; top:0; left:0; font-size:12px; color:#FFF; line-height:25px}
+.photoUpFinishMenu .current{background-color:#39c; color:#FFF}
+
+
+
+.photoUpFinishMain{width: 769px; height: 600px; border-left: 1px solid #E5E5E5; background-color: #FFF; position: absolute; top: 0; left: 230px;}
+.photoUpFinishMain .finishPrompt{width:770px; height:49px; border:0; border-bottom:1px solid #E5E5E5; background-color:#FFF; position:absolute; top:0; left:0}
+.photoUpFinishMain .correctSign{width: 30px; height: 20px; border: 0; position: absolute; top: 20px; left: 20px;}
+.photoUpFinishMain .promptInfo{width: 700px; height: 30px; border: 0; position: absolute; top: 20px; left: 60px;}
+.photoUpFinishMain .promptInfo p{ font-size: 14px; font-weight: bold; color: #444;}
+.photoUpFinishMain .promptInfo p a{ font-size: 14px; font-weight: bold; color: #FE6600!important;}
+
+.finishOperate{width: 769px; height: 490px; border-bottom: 1px solid #E5E5E5; position: absolute; top: 50px; left: 0; font-size: 13px;}
+.finishOperate .addInofTitle{position: absolute; top: 20px; left: 20px;}
+.finishOperate .photoName{position: absolute; top: 50px; left: 20px;}
+.finishOperate .photoName input[type=text]{width: 700px; height: 25px; }
+
+.finishOperate .photoDescription{position: absolute; top: 100px; left: 20px;}
+.finishOperate .photoDescription textarea{width: 700px; height: 50px; outline: none; border: 1px solid #DADADA; resize: none;}
+
+.finishOperate .photoName input[type=text], .finishOperate .photoDescription textarea{outline: none; border: 1px solid #DADADA;}
+.finishOperate .photoName input[type=text]:HOVER, .finishOperate .photoDescription textarea:HOVER{outline: none; border: 1px solid #A0A0A0;}
+.finishOperate .photoName input[type=text]:FOCUS, .finishOperate .photoDescription textarea:FOCUS{outline: none; border: 1px solid #3399FF; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3); }
+
+
+
+
+
+
+.finishControl{width: 769px; height: 60px; border: 0; position: absolute; top: 540px; left: 0; font-size: 13px;}
+.finishControl .saveButton{position: absolute; top: 15px; left: 100px;}
+.finishControl input[type=button]{height:25px; border:0; padding:0 20px 0 20px; background-color:#39f; font-size:12px; color:#FFF}
+.finishControl input[type=button]:HOVER{height:25px; border:0; padding:0 20px 0 20px; background-color:#06c; font-size:12px; color:#FFF}
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="messageBoard" extends="keekan">
+	
+		<action name="MessageBoardAction" class="com.keekan.action.MessageBoardAction" >
+			<result name="addMessageSuccess">/keekan/jsp/leaveMessage.jsp</result>
+			<result name="viewLeaveMessageSuccess">/keekan/jsp/leaveContent.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+		
+		<action name="ViewMessageBoardAction" class="com.keekan.action.MessageBoardAction" method="viewLeaveMessage">
+			<result name="viewLeaveMessageSuccess">/keekan/jsp/leaveContent.jsp</result>
+			<interceptor-ref name="defaultStack"/>
+		</action>
+		
+	</package>
+
+</struts>
