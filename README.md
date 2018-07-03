@@ -1,4 +1,4 @@
-![](WebRoot/img/KEEKAN.jpg)
+![](WebRoot/img/logo/KK_logo_video01-1.png)
 # Keekan
 Keekan is a social networking site, create early, because it is personal business projects, not completed on-line, in this recall, and when a Progressive.
 
